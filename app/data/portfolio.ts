@@ -37,7 +37,7 @@ export const demoProjects: PortfolioProject[] = [
     slug: 'green-plains-agro',
     title: 'Green Plains Agro',
     description:
-      'When Green Plains Agro first approached Deagensie, they carried more than a business plan—they carried a vision of fertile fields powered by innovation, ethical farming guided by technology, and nourishing communities while protecting the planet.',
+      'When Green Plains Agro first approached Deagensie, they carried more than a business plan. They carried a vision of fertile fields powered by innovation, ethical farming guided by technology, and nourishing communities while protecting the planet.',
     cover: '/images/works/green-plains/showcase.webp',
     tags: ['Strategy', 'Branding', 'Digital Infrastructure'],
     client: 'Green Plains Agro Ltd.',
@@ -81,7 +81,7 @@ export const demoProjects: PortfolioProject[] = [
     slug: 'deloxehr',
     title: 'DeloxeHR Talent Operations',
     description:
-      'DeloxeHR needed a brand that reflected its forward-thinking approach and transformative impact. Deagensie translated this vision into a powerful brand strategy and cohesive visual identity—crafting a positioning that emphasizes innovation, trust, and measurable growth.',
+      'DeloxeHR needed a brand that reflected its forward-thinking approach and transformative impact. Deagensie translated this vision into a powerful brand strategy and cohesive visual identity, crafting a positioning that emphasizes innovation, trust, and measurable growth.',
     cover: '/images/pages/portfolio/deloxxe.png',
     tags: ['Strategy', 'Branding', 'UI/UX Design'],
     client: 'DeloxeHR Solutions',
@@ -92,7 +92,7 @@ export const demoProjects: PortfolioProject[] = [
     slug: 'talentchess-africa',
     title: 'Talentchess Africa Workforce',
     description:
-      'With a bold vision to connect Africa’s brightest minds to meaningful career opportunities without losing their connection to home, Talentchess needed more than a platform—it needed a powerful story, global positioning, and digital architecture.',
+      'With a bold vision to connect Africa’s brightest minds to meaningful career opportunities without losing their connection to home, Talentchess needed more than a platform. It needed a powerful story, global positioning, and digital architecture.',
     cover: '/images/pages/portfolio/markup-laptop.png',
     tags: ['Strategy', 'Branding', 'Creative Economy'],
     client: 'Talentchess Foundation',

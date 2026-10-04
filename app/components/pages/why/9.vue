@@ -14,10 +14,10 @@
         <ul
           class="space-y-7 *:rounded-[calc(var(--radius)+2px)] *:border-l-2 *:border-[#3659A5] *:bg-[#E6FEFD]/30 *:p-6"
         >
-          <li>At Deagensie, we believe Africa is not the future — it is the present.</li>
+          <li>At Deagensie, we believe Africa is not the future; it is the present.</li>
           <li>We believe brands should be intelligent systems, not static logos.</li>
           <li>
-            We believe founders deserve more than service providers — they deserve growth partners
+            We believe founders deserve more than service providers; they deserve growth partners
           </li>
         </ul>
       </div>

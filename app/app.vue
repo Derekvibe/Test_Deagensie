@@ -45,8 +45,8 @@ useHead({
             />
           </NuxtLink>
           <p class="max-w-md text-sm leading-relaxed text-gray-300 sm:text-base">
-            Empowering businesses and creatives with intelligent AI workflows and global ecosystem
-            connections to innovate and succeed.
+            AI-led. Ecosystem-driven. Built for Growth. Where ventures grow and creative talent goes
+            global.
           </p>
           <div class="flex items-center gap-4 text-2xl text-gray-300">
             <NuxtLink
@@ -82,31 +82,41 @@ useHead({
 
         <div class="grid grid-cols-2 gap-6 sm:grid-cols-4 sm:gap-8 lg:gap-6">
           <div class="flex flex-col gap-3 text-sm">
-            <h3 class="mb-2 text-base font-bold tracking-wider text-white uppercase">Businesses</h3>
+            <h3 class="mb-2 text-base font-bold tracking-wider text-white uppercase">Growth Lab</h3>
             <NuxtLink
               to="/business"
               class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
-              >Hire Creatives</NuxtLink
+              >Overview</NuxtLink
             >
             <NuxtLink
               to="/business"
               class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
-              >Business Growth</NuxtLink
+              >Strategy</NuxtLink
             >
             <NuxtLink
-              to="/subscription"
+              to="/business"
               class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
-              >Talent-as-a-Service</NuxtLink
+              >Branding</NuxtLink
             >
             <NuxtLink
-              to="/contact"
+              to="/business"
               class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
-              >Work with us</NuxtLink
+              >Marketing</NuxtLink
+            >
+            <NuxtLink
+              to="/business"
+              class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
+              >Digital Platforms</NuxtLink
             >
           </div>
 
           <div class="flex flex-col gap-3 text-sm">
-            <h3 class="mb-2 text-base font-bold tracking-wider text-white uppercase">Creatives</h3>
+            <h3 class="mb-2 text-base font-bold tracking-wider text-white uppercase">TaaS</h3>
+            <NuxtLink
+              to="/creatives"
+              class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
+              >Find Talent</NuxtLink
+            >
             <NuxtLink
               to="/creatives"
               class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
@@ -115,12 +125,12 @@ useHead({
             <NuxtLink
               to="/creatives"
               class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
-              >Join Community</NuxtLink
+              >AI Matching Engine</NuxtLink
             >
             <NuxtLink
-              to="/subscription"
+              to="/creatives"
               class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
-              >Subscription Plans</NuxtLink
+              >Creative Careers</NuxtLink
             >
           </div>
 
@@ -139,7 +149,12 @@ useHead({
             <NuxtLink
               to="/portfolio"
               class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
-              >Our Portfolio</NuxtLink
+              >Our Work</NuxtLink
+            >
+            <NuxtLink
+              to="/resource"
+              class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
+              >Resources</NuxtLink
             >
             <NuxtLink
               to="/contact"
@@ -149,21 +164,21 @@ useHead({
           </div>
 
           <div class="flex flex-col gap-3 text-sm">
-            <h3 class="mb-2 text-base font-bold tracking-wider text-white uppercase">Resources</h3>
+            <h3 class="mb-2 text-base font-bold tracking-wider text-white uppercase">Legal</h3>
             <NuxtLink
-              to="/blog"
+              to="/contact"
               class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
-              >Blog</NuxtLink
+              >Privacy Policy</NuxtLink
             >
             <NuxtLink
-              to="/resource"
+              to="/contact"
               class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
-              >eBooks & Guides</NuxtLink
+              >Terms of Service</NuxtLink
             >
             <NuxtLink
-              to="/resource"
+              to="/contact"
               class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
-              >Knowledge Hub</NuxtLink
+              >Cookie Policy</NuxtLink
             >
           </div>
         </div>
@@ -179,6 +194,9 @@ useHead({
           >
           <NuxtLink to="/contact" class="transition-colors duration-200 hover:text-white"
             >Terms of Service</NuxtLink
+          >
+          <NuxtLink to="/contact" class="transition-colors duration-200 hover:text-white"
+            >Cookie Policy</NuxtLink
           >
         </div>
       </div>

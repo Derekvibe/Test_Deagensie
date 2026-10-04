@@ -10,21 +10,20 @@ import { Icon } from '@iconify/vue';
         <span
           class="inline-block rounded-full bg-[#04308F]/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-[#04308F] uppercase"
         >
-          Unmatched Growth Architecture
+          Two Engines. One Ecosystem.
         </span>
         <h2
           class="text-center font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl 2xl:text-6xl"
         >
-          The future of business growth is here.<br class="hidden sm:inline" />
-          <span class="text-[#04308F] italic">It&apos;s bold</span>,
-          <span class="text-[#05DED5]">It&apos;s intelligent</span>,
-          <span>It&apos;s Deagensie.</span>
+          The future of business growth isn't just about having a great idea or finding great
+          talent,<br class="hidden sm:inline" />
+          <span class="text-[#04308F] italic">it's about connecting both.</span>
         </h2>
       </div>
 
       <!-- Feature Cards Sequence -->
       <div class="space-y-10 lg:space-y-16">
-        <!-- Card 1: AI-Driven Branding -->
+        <!-- Card 1: Venture's Growth Lab -->
         <article
           v-reveal="'fade-up'"
           class="group relative rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-200/80 transition-all duration-500 hover:-translate-y-1 sm:p-10 lg:p-12"
@@ -35,17 +34,17 @@ import { Icon } from '@iconify/vue';
               <span
                 class="inline-block rounded-md bg-emerald-50 px-3 py-1 text-xs font-bold tracking-wider text-emerald-800 uppercase"
               >
-                AI-DRIVEN BRANDING & MARKETING
+                CORE ENGINE 01 • VENTURE'S GROWTH LAB
               </span>
               <h3
                 class="font-serif text-2xl leading-snug font-normal tracking-tight text-gray-900 lg:text-3xl xl:text-4xl"
               >
-                AI-Driven Branding & Marketing Intelligence
+                Where Ventures Become Growth-Ready
               </h3>
               <p class="text-base leading-relaxed font-normal text-gray-600">
-                Most agencies create stunning visuals and run ads, but Deagensie goes deeper—we
-                integrate AI to analyze market trends, predict consumer behavior, and optimize
-                branding in real-time.
+                A structured growth engine designed to help startups, high-growth companies, and
+                enterprise initiatives define their direction, refine their identity, launch
+                effective campaigns, and build digital platforms.
               </p>
 
               <!-- Checkmark Bullet List -->
@@ -55,21 +54,30 @@ import { Icon } from '@iconify/vue';
                     icon="lucide:check"
                     class="mt-0.5 shrink-0 text-xl font-bold text-[#05DED5]"
                   />
-                  <span>Market Intelligence & Predictive Trend Analysis</span>
+                  <span
+                    ><strong>Strategy Layer:</strong> Business, Market Research, Positioning &
+                    Growth Models</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
                   <Icon
                     icon="lucide:check"
                     class="mt-0.5 shrink-0 text-xl font-bold text-[#05DED5]"
                   />
-                  <span>Automated Brand Asset Alignment & Fine-tuning</span>
+                  <span
+                    ><strong>Branding Layer:</strong> Brand Strategy, Naming, Visual & Verbal
+                    Identity</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
                   <Icon
                     icon="lucide:check"
                     class="mt-0.5 shrink-0 text-xl font-bold text-[#05DED5]"
                   />
-                  <span>Dynamic Multi-Channel Campaign Optimization</span>
+                  <span
+                    ><strong>Marketing & Platforms:</strong> GTM Campaigns, Web & AI Digital
+                    Infrastructure</span
+                  >
                 </li>
               </ul>
 
@@ -78,7 +86,7 @@ import { Icon } from '@iconify/vue';
                   to="/business"
                   class="inline-flex items-center gap-2 text-base font-bold text-[#04308F] transition-colors duration-200 hover:text-[#05DED5]"
                 >
-                  <span>Learn more</span>
+                  <span>Explore Venture's Growth Lab</span>
                   <Icon
                     icon="lucide:arrow-right"
                     class="text-lg transition-transform duration-200 group-hover:translate-x-1.5"
@@ -101,17 +109,17 @@ import { Icon } from '@iconify/vue';
                     <Icon icon="solar:cpu-bold" />
                   </div>
                   <div>
-                    <h4 class="text-sm font-bold text-gray-900">Brand Intelligence Engine</h4>
-                    <p class="text-xs text-gray-500">Automated Strategy Agent</p>
+                    <h4 class="text-sm font-bold text-gray-900">Growth Lab Architecture</h4>
+                    <p class="text-xs text-gray-500">4-Layer System Integration</p>
                   </div>
                 </div>
                 <div class="space-y-2 rounded-xl border border-gray-200 bg-gray-50 p-3.5 text-xs">
                   <div class="flex justify-between font-semibold text-gray-700">
-                    <span>Market Fit Score</span>
-                    <span class="text-emerald-600">96% High Match</span>
+                    <span>Venture Readiness Index</span>
+                    <span class="text-emerald-600">98% Launch Ready</span>
                   </div>
                   <div class="h-1.5 w-full overflow-hidden rounded-full bg-gray-200">
-                    <div class="h-full w-[96%] rounded-full bg-emerald-500" />
+                    <div class="h-full w-[98%] rounded-full bg-emerald-500" />
                   </div>
                 </div>
               </div>
@@ -130,17 +138,17 @@ import { Icon } from '@iconify/vue';
               <span
                 class="inline-block rounded-md bg-blue-50 px-3 py-1 text-xs font-bold tracking-wider text-[#04308F] uppercase"
               >
-                TALENT-AS-A-SERVICE (TAAS)
+                CORE ENGINE 02 • TALENT-AS-A-SERVICE (TAAS)
               </span>
               <h3
                 class="font-serif text-2xl leading-snug font-normal tracking-tight text-gray-900 lg:text-3xl xl:text-4xl"
               >
-                Deploy Top-Tier Creatives into Your Workflow
+                The Predictive AI Talent Matching Engine
               </h3>
               <p class="text-base leading-relaxed font-normal text-gray-600">
-                African creatives can now find fulfilling careers while staying connected to their
-                roots. For startup founders, our platform provides access to in-demand creative
-                talent needed to thrive.
+                A 2-sided ecosystem connecting world-class creative talent with high-impact global
+                opportunities, powered by predictive AI signaling to ensure precise alignment
+                between capability and requirements.
               </p>
 
               <!-- Checkmark Bullet List -->
@@ -150,21 +158,30 @@ import { Icon } from '@iconify/vue';
                     icon="lucide:check"
                     class="mt-0.5 shrink-0 text-xl font-bold text-[#05DED5]"
                   />
-                  <span>Pre-Vetted Global Creative & Tech Specialists</span>
+                  <span
+                    ><strong>For Creatives:</strong> Profile creation, AI matching, global work,
+                    career growth</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
                   <Icon
                     icon="lucide:check"
                     class="mt-0.5 shrink-0 text-xl font-bold text-[#05DED5]"
                   />
-                  <span>On-Demand Embedded Team Extensions</span>
+                  <span
+                    ><strong>For Businesses:</strong> Requirements definition, AI matching, embedded
+                    teams</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
                   <Icon
                     icon="lucide:check"
                     class="mt-0.5 shrink-0 text-xl font-bold text-[#05DED5]"
                   />
-                  <span>Optimized Hiring Cost & High Turnaround Speed</span>
+                  <span
+                    ><strong>Self-Learning Flywheel:</strong> Intelligent matching that continuously
+                    improves</span
+                  >
                 </li>
               </ul>
 
@@ -173,7 +190,7 @@ import { Icon } from '@iconify/vue';
                   to="/creatives"
                   class="inline-flex items-center gap-2 text-base font-bold text-[#04308F] transition-colors duration-200 hover:text-[#05DED5]"
                 >
-                  <span>Learn more</span>
+                  <span>Explore Talent-as-a-Service</span>
                   <Icon
                     icon="lucide:arrow-right"
                     class="text-lg transition-transform duration-200 group-hover:translate-x-1.5"
@@ -190,11 +207,11 @@ import { Icon } from '@iconify/vue';
                 class="w-full max-w-sm space-y-4 rounded-2xl border border-gray-100 bg-white p-6 shadow-md"
               >
                 <div class="flex items-center justify-between">
-                  <span class="text-xs font-bold text-gray-500 uppercase">Talent Pipeline</span>
+                  <span class="text-xs font-bold text-gray-500 uppercase">AI Talent Engine</span>
                   <span
                     class="rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-bold text-[#04308F]"
                   >
-                    Active
+                    AI Signal Live
                   </span>
                 </div>
                 <div class="space-y-3">
@@ -207,7 +224,7 @@ import { Icon } from '@iconify/vue';
                     />
                     <div>
                       <p class="text-xs font-bold text-gray-900">Victor E.</p>
-                      <p class="text-[11px] text-gray-500">Lead Product Designer</p>
+                      <p class="text-[11px] text-gray-500">Product Designer • AI Match 99%</p>
                     </div>
                   </div>
                   <div
@@ -219,7 +236,7 @@ import { Icon } from '@iconify/vue';
                     />
                     <div>
                       <p class="text-xs font-bold text-gray-900">Don O.</p>
-                      <p class="text-[11px] text-gray-500">Brand Strategist</p>
+                      <p class="text-[11px] text-gray-500">Brand Strategist • AI Match 97%</p>
                     </div>
                   </div>
                 </div>
@@ -228,7 +245,7 @@ import { Icon } from '@iconify/vue';
           </div>
         </article>
 
-        <!-- Card 3: Founders' Growth Lab -->
+        <!-- Card 3: The Growth Lab Journey -->
         <article
           v-reveal="'fade-up'"
           class="group relative rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-200/80 transition-all duration-500 hover:-translate-y-1 sm:p-10 lg:p-12"
@@ -239,17 +256,16 @@ import { Icon } from '@iconify/vue';
               <span
                 class="inline-block rounded-md bg-purple-50 px-3 py-1 text-xs font-bold tracking-wider text-purple-700 uppercase"
               >
-                FOUNDERS' GROWTH LAB
+                THE GROWTH JOURNEY
               </span>
               <h3
                 class="font-serif text-2xl leading-snug font-normal tracking-tight text-gray-900 lg:text-3xl xl:text-4xl"
               >
-                Upskill & Scale Your Business Vision
+                From Vision to Market Leadership
               </h3>
               <p class="text-base leading-relaxed font-normal text-gray-600">
-                Startups struggle with strategy, execution, and funding. Deagensie&apos;s Growth Lab
-                is an exclusive accelerator providing branding, investor pitch decks, digital
-                presence, and growth capital.
+                Whether at ideation, early stage, growth stage, or enterprise transformation,
+                Deagensie guides ventures through a 6-step roadmap to scalable market dominance.
               </p>
 
               <!-- Checkmark Bullet List -->
@@ -259,30 +275,33 @@ import { Icon } from '@iconify/vue';
                     icon="lucide:check"
                     class="mt-0.5 shrink-0 text-xl font-bold text-[#05DED5]"
                   />
-                  <span>Investor Pitch Decks & Valuation Positioning</span>
+                  <span><strong>Phase 1:</strong> Discover & Strategize: Research & Position</span>
                 </li>
                 <li class="flex items-start gap-3">
                   <Icon
                     icon="lucide:check"
                     class="mt-0.5 shrink-0 text-xl font-bold text-[#05DED5]"
                   />
-                  <span>MVP Product Acceleration & Scalability</span>
+                  <span><strong>Phase 2:</strong> Brand & Market: Identity & Campaigns</span>
                 </li>
                 <li class="flex items-start gap-3">
                   <Icon
                     icon="lucide:check"
                     class="mt-0.5 shrink-0 text-xl font-bold text-[#05DED5]"
                   />
-                  <span>Access to Global Growth Capital & Mentors</span>
+                  <span
+                    ><strong>Phase 3:</strong> Build & Grow: Digital Platforms & Talent
+                    Scaling</span
+                  >
                 </li>
               </ul>
 
               <div class="pt-2">
                 <NuxtLink
-                  to="/subscription"
+                  to="/why"
                   class="inline-flex items-center gap-2 text-base font-bold text-[#04308F] transition-colors duration-200 hover:text-[#05DED5]"
                 >
-                  <span>Learn more</span>
+                  <span>Learn Why Deagensie</span>
                   <Icon
                     icon="lucide:arrow-right"
                     class="text-lg transition-transform duration-200 group-hover:translate-x-1.5"
@@ -305,15 +324,15 @@ import { Icon } from '@iconify/vue';
                     <Icon icon="solar:rocket-bold" />
                   </div>
                   <div>
-                    <h4 class="text-sm font-bold text-gray-900">Growth Lab Accelerator</h4>
-                    <p class="text-xs text-gray-500">Fundraising & Scaling</p>
+                    <h4 class="text-sm font-bold text-gray-900">Venture Ecosystem</h4>
+                    <p class="text-xs text-gray-500">6-Stage Growth Pipeline</p>
                   </div>
                 </div>
                 <div
                   class="space-y-1 rounded-xl border border-purple-100 bg-purple-50 p-3 text-xs text-purple-900"
                 >
-                  <p class="font-bold">Stage 3: Market Expansion</p>
-                  <p class="text-gray-600">Pitch deck approved • Funding active</p>
+                  <p class="font-bold">Discover → Strategize → Brand → Market → Build → Grow</p>
+                  <p class="text-gray-600">Integrated end-to-end execution</p>
                 </div>
               </div>
             </div>
@@ -321,7 +340,7 @@ import { Icon } from '@iconify/vue';
         </article>
       </div>
 
-      <!-- Andela-Style Dual CTA Pill Buttons -->
+      <!-- Dual Primary CTAs -->
       <div
         v-reveal="'fade-up'"
         class="flex flex-col flex-wrap items-center justify-center gap-4 pt-8 sm:flex-row"
@@ -330,13 +349,13 @@ import { Icon } from '@iconify/vue';
           to="/contact"
           class="w-full rounded-full bg-[#020B1E] px-8 py-4 text-center text-base font-bold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:bg-[#04308F] sm:w-auto lg:text-lg"
         >
-          Book a Discovery Call
+          Start a Venture Project
         </NuxtLink>
         <NuxtLink
-          to="/business"
+          to="/creatives"
           class="w-full rounded-full border-2 border-[#04308F] bg-white px-8 py-4 text-center text-base font-bold text-[#04308F] shadow-md transition-all duration-300 hover:scale-105 hover:bg-[#04308F] hover:text-white sm:w-auto lg:text-lg"
         >
-          Explore Our Model
+          Find an Opportunity
         </NuxtLink>
       </div>
     </div>

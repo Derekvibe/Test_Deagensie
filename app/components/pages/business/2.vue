@@ -15,8 +15,8 @@
         Premium Growth Solutions for Visionary Brands
       </h2>
       <p class="mx-auto max-w-3xl text-base leading-relaxed font-normal text-gray-500 lg:text-lg">
-        Growth isn&apos;t accidental — it&apos;s engineered. We partner with startups ready to
-        scale, ambitious category disruptors, and established brands seeking reinvention.
+        Growth isn&apos;t accidental; it&apos;s engineered. We partner with startups ready to scale,
+        ambitious category disruptors, and established brands seeking reinvention.
       </p>
       <div class="flex flex-wrap justify-center gap-3 pt-2">
         <span

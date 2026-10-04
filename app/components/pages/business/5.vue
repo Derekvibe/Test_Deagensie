@@ -15,9 +15,9 @@
           Because the future belongs to brands that think differently
         </h2>
         <p class="text-base leading-relaxed font-normal text-gray-500">
-          Growth requires more than effort — it requires insight. Creativity, when properly
+          Growth requires more than effort, it requires insight. Creativity, when properly
           harnessed, becomes a competitive weapon. At Deagensie, we blend strategy, talent, and
-          innovation to build businesses that don&apos;t just compete — they lead.
+          innovation to build businesses that don&apos;t just compete, but lead.
         </p>
 
         <div class="grid grid-cols-1 gap-6 pt-4 sm:grid-cols-3">

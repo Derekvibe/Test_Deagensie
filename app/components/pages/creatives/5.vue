@@ -16,10 +16,10 @@ import { Icon } from '@iconify/vue';
         <h2
           class="font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
         >
-          Join Our Community — Where Emerging Leaders Are Built
+          Join Our Community: Where Emerging Leaders Are Built
         </h2>
         <p class="text-base leading-relaxed font-normal text-gray-500">
-          Deagensie is more than a platform — it&apos;s a movement. Become part of a growing network
+          Deagensie is more than a platform. It&apos;s a movement. Become part of a growing network
           of young creative leaders and entrepreneurs dedicated to innovation and global impact.
         </p>
 

@@ -9,7 +9,7 @@
       <p class="mx-auto max-w-3xl text-base leading-relaxed font-normal text-gray-500 lg:text-lg">
         Because your talent deserves more than geographical limitations. Deagensie is built for
         African creatives who want global relevance without losing their identity. You
-        shouldn&apos;t have to choose between opportunity and origin — you can have both.
+        shouldn&apos;t have to choose between opportunity and origin; you can have both.
       </p>
     </div>
   </section>

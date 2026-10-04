@@ -9,59 +9,59 @@ const siteName = 'Deagensie';
 
 const staticPageSeo: Record<string, PageSeo> = {
   '/': {
-    title: 'Deagensie | Business Growth and Creative Talent',
+    title: "Deagensie | Venture's Growth Lab & Talent-as-a-Service (TaaS)",
     description:
-      'Deagensie helps businesses scale with strategy, technology, and access to skilled African creative talent.',
+      'Deagensie helps ventures build strategy, branding, marketing & digital platforms, and connects global creative talent through predictive AI matching.',
   },
   '/about': {
-    title: 'About Deagensie | Strategy, Talent, and Innovation',
+    title: 'About Deagensie | Strategy, Talent & Ecosystem Innovation',
     description:
-      'Learn how Deagensie connects ambitious businesses with creative talent, strategic systems, and scalable growth support.',
+      "Learn about Deagensie's mission to build scalable venture systems and unlock global creative talent through intelligence and execution.",
   },
   '/why': {
-    title: 'Why Deagensie | Creative Talent for Growing Businesses',
+    title: 'Why Deagensie | Two Engines. One Ecosystem.',
     description:
-      'See why Deagensie is built for companies and creatives that need smarter growth, stronger execution, and borderless opportunity.',
+      "Discover why Deagensie's dual engines (Venture's Growth Lab & Talent-as-a-Service) power scalable business success and borderless talent growth.",
   },
   '/business': {
-    title: 'For Businesses | Deagensie',
+    title: "Venture's Growth Lab | Deagensie",
     description:
-      'Access strategy, brand, technology, and creative talent solutions designed for startups and growing businesses.',
+      'Where ventures become growth-ready. A structured growth engine across Strategy, Branding, Marketing, and Digital Platforms.',
   },
   '/business/solutions': {
-    title: 'Business Solutions | Deagensie',
+    title: 'Growth Solutions | Venture Growth Lab',
     description:
-      'Explore Deagensie services across growth strategy, brand experience, product technology, training, and talent-as-a-service.',
+      'Explore Deagensie Growth Lab solutions across 01 Strategy, 02 Branding, 03 Marketing, and 04 Digital Platforms.',
   },
   '/creatives': {
-    title: 'For Creatives | Deagensie',
+    title: 'Talent-as-a-Service (TaaS) | Deagensie',
     description:
-      'Join Deagensie to find meaningful creative opportunities, build global relevance, and stay connected to your roots.',
+      'Predictive AI talent matching engine connecting top-tier global creative professionals with high-impact venture opportunities.',
   },
   '/blog': {
-    title: 'Blog | Deagensie',
+    title: 'Growth & Talent Insights | Deagensie',
     description:
-      'Read Deagensie insights on business growth, creativity, innovation, talent, and the future of work.',
+      'Read Deagensie insights on business growth, branding, digital platforms, AI matching, and the creative talent economy.',
   },
   '/resource': {
-    title: 'Resources | Deagensie',
+    title: 'Resource Hub | Growth & Talent Intelligence',
     description:
-      'Explore Deagensie resources for creative professionals, founders, and teams building stronger businesses.',
+      'Explore Deagensie resources, playbooks, and frameworks for creative professionals, founders, and scaling teams.',
   },
   '/contact': {
-    title: 'Contact Deagensie',
+    title: 'Contact Deagensie | Start a Project or Join TaaS',
     description:
-      'Talk to Deagensie about business growth, creative talent, partnerships, or your next opportunity.',
+      'Get in touch with Deagensie to launch a Venture Project or join our global Talent-as-a-Service ecosystem.',
   },
   '/register': {
-    title: 'Get Started | Deagensie',
+    title: 'Get Started | Deagensie Ecosystem',
     description:
-      'Start your Deagensie registration as a business looking for support or a creative looking for opportunity.',
+      'Register your venture for Growth Lab solutions or create your profile as a creative in our TaaS network.',
   },
   '/subscription': {
-    title: 'Subscriptions | Deagensie',
+    title: 'Growth Subscriptions | Deagensie',
     description:
-      'Browse Deagensie subscription plans for flexible business growth and creative talent support.',
+      'Browse Deagensie subscription plans for flexible venture growth support and embedded creative talent.',
   },
 };
 

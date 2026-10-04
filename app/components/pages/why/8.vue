@@ -8,8 +8,8 @@ import { Icon } from '@iconify/vue';
       <h2
         class="text-center text-2xl leading-normal font-semibold lg:text-4xl xl:text-5xl xl:leading-normal"
       >
-        If you're building something bold <span class="hidden lg:inline">&nbsp;<br /></span> — we
-        are your unfair advantage.
+        If you're building something bold <span class="hidden lg:inline">&nbsp;<br /></span>we are
+        your unfair advantage.
       </h2>
       <ul
         class="mt-15 space-y-6 *:rounded-[calc(var(--radius)+2px)] *:border *:border-[#8CA0CB] *:bg-[#FCFCFE] *:px-4 *:py-6 lg:grid lg:grid-cols-3 lg:gap-6 lg:space-y-0 **:[div]:grid **:[div]:size-10 **:[div]:place-items-center **:[div]:rounded-full **:[div]:bg-[#E6EAF4] **:[div]:text-2xl **:[div]:text-[#04308F] **:[h3]:mt-4 **:[h3]:mb-3 **:[h3]:text-2xl **:[h3]:leading-normal **:[h3]:font-semibold lg:**:[h3]:min-h-[2lh] xl:**:[h3]:min-h-0 **:[p]:py-3"

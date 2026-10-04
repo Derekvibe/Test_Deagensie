@@ -31,7 +31,7 @@ export const demoFullPost: BlogPost = {
   body: [
     {
       type: 'paragraph',
-      text: "Artificial intelligence is no longer a buzzword — it is the engine powering the next generation of brand strategy. From predictive consumer behavior analysis to real-time campaign optimization, AI is fundamentally reshaping how the world's most successful brands operate.",
+      text: "Artificial intelligence is no longer a buzzword; it is the engine powering the next generation of brand strategy. From predictive consumer behavior analysis to real-time campaign optimization, AI is fundamentally reshaping how the world's most successful brands operate.",
     },
     { type: 'heading', text: 'Why AI Is the New Competitive Advantage' },
     {
@@ -40,11 +40,11 @@ export const demoFullPost: BlogPost = {
     },
     {
       type: 'quote',
-      text: "“Your brand doesn't just launch. It learns. It adapts. It improves. With AI embedded at the core of your strategy, branding becomes a living system — not a one-time design project.”",
+      text: "“Your brand doesn't just launch. It learns. It adapts. It improves. With AI embedded at the core of your strategy, branding becomes a living system, not a one-time design project.”",
     },
     {
       type: 'paragraph',
-      text: 'The most successful brands today combine the irreplaceable creativity of human strategists with the pattern-recognition power of artificial intelligence. The result is a brand that doesn’t just communicate well — it communicates smarter, at the right moment, to the right audience, with the right message.',
+      text: 'The most successful brands today combine the irreplaceable creativity of human strategists with the pattern-recognition power of artificial intelligence. The result is a brand that communicates well and communicates smarter, at the right moment, to the right audience, with the right message.',
     },
     { type: 'heading', text: 'What AI-Driven Branding Actually Looks Like' },
     {
@@ -54,11 +54,11 @@ export const demoFullPost: BlogPost = {
     {
       type: 'list',
       items: [
-        'Market Trend Analysis — Spotting emerging cultural movements before they hit the mainstream',
-        'Consumer Behavior Prediction — Understanding what your audience will want next, not just what they want now',
-        'Performance Intelligence — Real-time campaign optimization that adjusts spend and creative automatically',
-        'Brand Positioning Modeling — Testing strategic directions in simulation before committing to launch',
-        'Data-Driven Creative Optimization — Refining messaging copy and visual direction based on actual behavioral data',
+        'Market Trend Analysis: Spotting emerging cultural movements before they hit the mainstream',
+        'Consumer Behavior Prediction: Understanding what your audience will want next, not just what they want now',
+        'Performance Intelligence: Real-time campaign optimization that adjusts spend and creative automatically',
+        'Brand Positioning Modeling: Testing strategic directions in simulation before committing to launch',
+        'Data-Driven Creative Optimization: Refining messaging copy and visual direction based on actual behavioral data',
       ],
     },
     { type: 'heading', text: 'The Human + Machine Partnership' },
@@ -68,12 +68,12 @@ export const demoFullPost: BlogPost = {
     },
     {
       type: 'paragraph',
-      text: 'Think of AI as the research team that never sleeps — constantly scanning signals, surfacing insights, and flagging opportunities for the human strategist to act on. When this partnership works well, the results are extraordinary: brands that feel deeply human and are powered by rigorous intelligence.',
+      text: 'Think of AI as the research team that never sleeps, constantly scanning signals, surfacing insights, and flagging opportunities for the human strategist to act on. When this partnership works well, the results are extraordinary: brands that feel deeply human and are powered by rigorous intelligence.',
     },
     { type: 'heading', text: 'What This Means for African Businesses' },
     {
       type: 'paragraph',
-      text: 'For African startups and SMEs, AI-driven branding represents a once-in-a-generation opportunity to compete at the highest level without the budget of a Fortune 500 company. With the right systems in place, a Lagos startup can deploy the same intelligence infrastructure as a global brand — and win on creativity, speed, and cultural relevance.',
+      text: 'For African startups and SMEs, AI-driven branding represents a once-in-a-generation opportunity to compete at the highest level without the budget of a Fortune 500 company. With the right systems in place, a Lagos startup can deploy the same intelligence infrastructure as a global brand and win on creativity, speed, and cultural relevance.',
     },
     {
       type: 'paragraph',

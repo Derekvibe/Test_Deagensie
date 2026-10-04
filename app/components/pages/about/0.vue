@@ -10,7 +10,7 @@
         <h1
           class="font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-6xl"
         >
-          Deagensie isn&apos;t just an agency—it&apos;s a growth engine
+          Deagensie is not just an agency. It&apos;s a growth engine
         </h1>
         <p class="text-base leading-relaxed font-normal text-gray-500 sm:text-lg lg:text-xl">
           A predictive intelligence platform, and a business accelerator in one. We don&apos;t just

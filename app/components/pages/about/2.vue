@@ -19,18 +19,18 @@
         </h2>
         <div class="space-y-4 text-base leading-relaxed font-normal text-gray-500">
           <p>
-            Deagensie isn&apos;t just an agency—it&apos;s a growth engine, a predictive intelligence
+            Deagensie is not just an agency; it&apos;s a growth engine, a predictive intelligence
             platform, and a business accelerator in one. We don&apos;t just design brands. We build
             legacies. We don&apos;t just market businesses. We engineer their dominance.
           </p>
           <p>
             Imagine a business growth agency that doesn&apos;t just brand, market, or build digital
-            products—but seamlessly integrates all three into a single, AI-powered ecosystem that
+            products, but seamlessly integrates all three into a single, AI-powered ecosystem that
             fuels business success from ideation to market dominance.
           </p>
           <p>
             Unlike traditional creative agencies, Deagensie is a tech-driven, ecosystem-based
-            creative growth agency—the first of its kind. We build bridges between creative talent
+            creative growth agency, the first of its kind. We build bridges between creative talent
             and businesses, ensuring startups scale faster and creatives thrive without borders.
           </p>
         </div>

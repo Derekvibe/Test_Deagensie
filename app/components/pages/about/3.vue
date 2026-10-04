@@ -58,7 +58,7 @@ const coreValues = [
           >
             <h3 class="font-serif text-xl font-normal text-gray-900">Our Vision Statement</h3>
             <p class="text-sm leading-relaxed font-normal text-gray-500">
-              We envision a borderless world where creative talents thrive—where intelligent minds,
+              We envision a borderless world where creative talents thrive, where intelligent minds,
               regardless of geography, collaborate with the world&apos;s leading brands.
             </p>
           </div>

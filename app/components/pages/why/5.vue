@@ -8,7 +8,7 @@ import { Icon } from '@iconify/vue';
       <h2
         class="text-center text-2xl leading-normal font-semibold lg:text-4xl xl:text-5xl xl:leading-normal"
       >
-        The Founders' Growth Lab <span class="hidden lg:inline">&nbsp;<br /></span> — Where Startups
+        The Founders' Growth Lab <span class="hidden lg:inline">&nbsp;<br /></span>Where Startups
         Become Scalable Brands.
       </h2>
       <p class="mt-4 mb-15 text-center">

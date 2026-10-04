@@ -5,20 +5,20 @@ import { Icon } from '@iconify/vue';
 <template>
   <section class="overflow-hidden border-t border-gray-100 bg-white py-24 text-gray-900 lg:py-32">
     <div class="mx-auto w-5/6 max-w-7xl space-y-16 lg:space-y-20">
-      <!-- Andela-Style Section Editorial Header (Screenshot 5 Header) -->
+      <!-- Section Editorial Header -->
       <div class="mx-auto max-w-3xl space-y-4 text-center">
         <h2
           class="font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl 2xl:text-6xl"
         >
-          One platform to scale brand, talent, and AI
+          One platform. Two core engines.
         </h2>
         <p class="text-base leading-relaxed font-normal text-gray-600 lg:text-lg">
-          Access world-class creatives, production delivery, and AI workforce workflows in a single
-          platform designed for enterprise digital transformation.
+          Seamlessly integrating Venture's Growth Lab with Talent-as-a-Service into a unified
+          execution ecosystem for modern businesses and global talent.
         </p>
       </div>
 
-      <!-- Andela Single Platform Split Card Container (Screenshot 5 Split Card) -->
+      <!-- Single Platform Split Card Container -->
       <div
         class="overflow-hidden rounded-3xl border border-gray-100 bg-white shadow-xl shadow-gray-100/80"
       >
@@ -33,44 +33,53 @@ import { Icon } from '@iconify/vue';
             <h3
               class="font-serif text-2xl leading-snug font-normal tracking-tight text-gray-900 sm:text-3xl lg:text-4xl"
             >
-              Deploy AI-native teams into production systems
+              Deploy AI-led growth systems & talent
             </h3>
             <p class="text-base leading-relaxed font-normal text-gray-600">
-              Imagine a business growth partner that doesn&apos;t just brand or market—but
-              seamlessly integrates talent, strategy, and tech into a unified execution machine.
+              A single platform designed to handle your entire growth journey—from defining brand
+              strategy to deploying AI-matched creative teams into production systems.
             </p>
 
-            <!-- Checkmark Bullet List (Screenshot 5 Checkmarks) -->
+            <!-- Checkmark Bullet List -->
             <ul class="space-y-3.5 pt-2 text-sm font-medium text-gray-700 sm:text-base">
               <li class="flex items-start gap-3">
                 <Icon
                   icon="lucide:check"
                   class="mt-0.5 shrink-0 text-xl font-bold text-[#05DED5]"
                 />
-                <span><strong>Builders:</strong> AI & Brand Strategy Architects</span>
+                <span
+                  ><strong>01 Strategy & Branding:</strong> Defining direction, visual identity, and
+                  market positioning</span
+                >
               </li>
               <li class="flex items-start gap-3">
                 <Icon
                   icon="lucide:check"
                   class="mt-0.5 shrink-0 text-xl font-bold text-[#05DED5]"
                 />
-                <span><strong>Integrators:</strong> Scalable UI/UX & Web Infrastructure</span>
+                <span
+                  ><strong>02 Digital Platforms:</strong> Web apps, digital products, and AI
+                  workflow infrastructure</span
+                >
               </li>
               <li class="flex items-start gap-3">
                 <Icon
                   icon="lucide:check"
                   class="mt-0.5 shrink-0 text-xl font-bold text-[#05DED5]"
                 />
-                <span><strong>Scalers:</strong> On-Demand Embedded Creative Talents</span>
+                <span
+                  ><strong>03 TaaS Talent Integration:</strong> On-demand embedded creative
+                  professionals</span
+                >
               </li>
             </ul>
 
             <div class="pt-4">
               <NuxtLink
-                to="/"
+                to="/business"
                 class="inline-flex items-center gap-2 text-base font-bold text-[#04308F] transition-colors duration-200 hover:text-[#05DED5]"
               >
-                <span>Learn more</span>
+                <span>Discover Venture's Growth Lab</span>
                 <Icon
                   icon="lucide:arrow-right"
                   class="text-lg transition-transform duration-200 hover:translate-x-1"
@@ -79,7 +88,7 @@ import { Icon } from '@iconify/vue';
             </div>
           </div>
 
-          <!-- Right Column Media Container with Floating Profile Badge (Screenshot 5 Right Media) -->
+          <!-- Right Column Media Container with Floating Profile Badge -->
           <div
             class="relative flex min-h-90 items-center justify-center bg-emerald-50/60 p-6 sm:p-10 lg:col-span-6"
           >
@@ -93,7 +102,7 @@ import { Icon } from '@iconify/vue';
                 class="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent"
               />
 
-              <!-- Floating Profile Badge (Screenshot 5 Overlay) -->
+              <!-- Floating Profile Badge -->
               <div
                 class="absolute bottom-6 left-6 space-y-1 rounded-2xl border border-white/40 bg-white/95 px-4 py-3 text-gray-900 shadow-xl backdrop-blur-md"
               >
@@ -101,7 +110,7 @@ import { Icon } from '@iconify/vue';
                 <p class="text-xs font-semibold text-[#04308F]">Head of Creative Operations</p>
                 <div class="flex items-center gap-1.5 pt-1 text-[11px] font-medium text-gray-500">
                   <Icon icon="simple-icons:github" class="text-xs text-black" />
-                  <span>GitHub Verified • Deagensie Ecosystem</span>
+                  <span>Verified TaaS Talent • Deagensie Ecosystem</span>
                 </div>
               </div>
             </div>
@@ -120,11 +129,11 @@ import { Icon } from '@iconify/vue';
           <h3
             class="mb-3 font-serif text-xl font-normal text-gray-900 group-hover:text-[#04308F] lg:text-2xl"
           >
-            Beyond Branding — Growth Pipelines
+            Venture's Growth Lab
           </h3>
           <p class="text-sm leading-relaxed font-normal text-gray-600 lg:text-base">
-            We don&apos;t just design logos or campaigns; we engineer business growth. Our talent
-            community matches businesses with in-demand creative professionals.
+            4 integrated layers (Strategy, Branding, Marketing, Digital Platforms) guiding ventures
+            from discovery to market dominance.
           </p>
         </article>
 
@@ -137,11 +146,11 @@ import { Icon } from '@iconify/vue';
           <h3
             class="mb-3 font-serif text-xl font-normal text-gray-900 group-hover:text-[#04308F] lg:text-2xl"
           >
-            From Outsourcing to Talent Ownership
+            Talent-as-a-Service (TaaS)
           </h3>
           <p class="text-sm leading-relaxed font-normal text-gray-600 lg:text-base">
-            Unlike traditional gig platforms, we upskill and nurture creatives, offering startups
-            long-term, cost-effective partnerships instead of short-term hires.
+            Predictive AI matching talent signals with opportunity signals to connect top global
+            creative talent with high-impact ventures.
           </p>
         </article>
 
@@ -154,11 +163,11 @@ import { Icon } from '@iconify/vue';
           <h3
             class="mb-3 font-serif text-xl font-normal text-gray-900 group-hover:text-[#04308F] lg:text-2xl"
           >
-            Growth-as-a-Service (GaaS)
+            Self-Learning Ecosystem Flywheel
           </h3>
           <p class="text-sm leading-relaxed font-normal text-gray-600 lg:text-base">
-            Subscription-based creative solutions allowing startups to scale branding, marketing,
-            and digital needs without agency friction.
+            A continuous loop where venture growth creates talent opportunities and talent
+            excellence accelerates venture success.
           </p>
         </article>
       </div>

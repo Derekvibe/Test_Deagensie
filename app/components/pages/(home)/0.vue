@@ -376,20 +376,18 @@ onBeforeUnmount(() => {
       <!-- Editorial Header Content — centred, max readable width -->
       <div v-reveal="'fade-up'" class="mx-auto max-w-4xl space-y-6 text-center">
         <h1
-          class="font-serif text-2xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-6xl xl:text-7xl"
+          class="font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-5xl lg:text-6xl xl:text-7xl"
         >
-          AI-led and ecosystem-driven <br class="hidden sm:inline" />
-          creative agency building -
+          Build What's Next. <br class="hidden sm:inline" />
           <span class="mt-1 block font-sans font-bold text-[#04308F] italic">
-            <span ref="spanRef">{{ displayText }}</span>
-            <span class="animate-pulse text-[#05DED5]">|</span>
+            Find Who's Next.
           </span>
         </h1>
         <p
-          class="mx-auto max-w-2xl text-base leading-relaxed font-normal text-gray-500 sm:text-lg lg:text-xl"
+          class="mx-auto max-w-3xl text-base leading-relaxed font-normal text-gray-600 sm:text-lg lg:text-xl"
         >
-          Empowering scalable businesses, unlocking global talent, and expanding the boundaries of
-          the digital creative economy.
+          Deagensie helps ventures build the systems they need to grow—and connects exceptional
+          creative talent to the opportunities where they can thrive.
         </p>
         <!-- Checkmark list -->
         <div
@@ -397,7 +395,7 @@ onBeforeUnmount(() => {
         >
           <div class="flex items-center gap-2">
             <Icon icon="lucide:check" class="text-lg font-bold text-[#05DED5]" />
-            <span>AI-Led Branding & Strategy</span>
+            <span>Venture's Growth Lab</span>
           </div>
           <div class="flex items-center gap-2">
             <Icon icon="lucide:check" class="text-lg font-bold text-[#05DED5]" />
@@ -405,7 +403,7 @@ onBeforeUnmount(() => {
           </div>
           <div class="flex items-center gap-2">
             <Icon icon="lucide:check" class="text-lg font-bold text-[#05DED5]" />
-            <span>Founders' Growth Lab</span>
+            <span>Predictive AI Matching</span>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@
       <h2
         class="text-center text-2xl leading-normal font-semibold lg:text-4xl xl:text-5xl xl:leading-normal"
       >
-        Deagensie Difference — We combine <br />
+        The Deagensie Difference: We combine <br />
         what others separate.
       </h2>
       <p class="mt-4 text-center text-[#373737]">
@@ -12,7 +12,7 @@
         focus on
 
         <span class="hidden lg:inline">&nbsp;<br /></span>placement. Deagensie integrates all three
-        — and goes further.
+        and goes further.
         <span class="text-lg font-bold text-[#373737]"> Deagensie integrates all three.</span>
       </p>
       <ul
@@ -30,7 +30,7 @@
           <span>02</span>
           <h3>African creative excellence</h3>
           <p>
-            Africa's most dynamic creative minds — designers, strategists, storytellers — matched to
+            Africa's most dynamic creative minds: designers, strategists, storytellers, matched to
             global brands that need them.
           </p>
         </li>
@@ -46,7 +46,7 @@
           <span>04</span>
           <h3>Real-time optimization</h3>
           <p>
-            Your brand strategy evolves continuously — not just at launch. We refine, test, and
+            Your brand strategy evolves continuously, not just at launch. We refine, test, and
             optimize as your market moves.
           </p>
         </li>

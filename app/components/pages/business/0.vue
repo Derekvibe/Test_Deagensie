@@ -5,30 +5,30 @@
         <span
           class="inline-block rounded-full bg-[#04308F]/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-[#04308F] uppercase"
         >
-          For Businesses
+          Core Engine 01 • Venture's Growth Lab
         </span>
         <h1
           class="font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-6xl"
         >
-          Customized Solutions for Scaling Businesses
+          Where Ventures Become Growth-Ready
         </h1>
-        <p class="text-base leading-relaxed font-normal text-gray-500 sm:text-lg lg:text-xl">
-          The future of business growth is here. It&apos;s bold, it&apos;s intelligent, and
-          it&apos;s ecosystem-driven. We empower ambitious companies to scale faster with AI-led
-          strategy and top-tier talent.
+        <p class="text-base leading-relaxed font-normal text-gray-600 sm:text-lg lg:text-xl">
+          A structured growth engine designed to help startups, high-growth companies, and
+          enterprise initiatives define direction, refine identity, launch effective campaigns, and
+          build scalable digital platforms.
         </p>
         <div class="flex flex-wrap items-center gap-4 pt-4">
           <NuxtLink
             to="/contact"
             class="inline-flex items-center gap-2 rounded-full bg-[#04308F] px-8 py-4 text-base font-semibold text-white shadow-md shadow-[#04308F]/20 transition-all duration-300 hover:scale-105 hover:bg-[#05DED5] hover:text-gray-900"
           >
-            Schedule Business Audit
+            Start a Venture Project
           </NuxtLink>
           <NuxtLink
-            to="/subscription"
+            to="/why"
             class="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-8 py-4 text-base font-semibold text-gray-900 transition-all duration-300 hover:border-[#04308F] hover:text-[#04308F]"
           >
-            Explore Plans
+            Why Deagensie Growth Lab
           </NuxtLink>
         </div>
       </div>

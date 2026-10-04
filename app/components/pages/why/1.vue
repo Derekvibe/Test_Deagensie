@@ -14,7 +14,7 @@ import { Icon } from '@iconify/vue';
         </h2>
         <p class="text-base leading-relaxed font-normal text-gray-500 lg:text-lg">
           We fuse AI-driven intelligence, African creative excellence, and founder-focused growth
-          systems to build brands that don&apos;t just look good — they evolve, adapt, and scale.
+          systems to build brands that don&apos;t just look good; they evolve, adapt, and scale.
         </p>
       </div>
 

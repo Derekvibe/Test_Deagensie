@@ -9,12 +9,11 @@ const activeDesktopMenu = ref<DesktopMenu | null>(null);
 let closeTimer: ReturnType<typeof setTimeout> | undefined;
 
 const menuItems: { id: DesktopMenu; label: string; to: string }[] = [
-  { id: 'business', label: 'Business', to: '/business' },
+  { id: 'business', label: 'Ventures', to: '/business' },
   { id: 'creatives', label: 'Creatives', to: '/creatives' },
   { id: 'why', label: 'Why Deagensie?', to: '/why' },
   { id: 'about', label: 'About Us', to: '/about' },
-  { id: 'subscription', label: 'Subscription', to: '/subscription' },
-  { id: 'resource', label: 'Resource', to: '/resource' },
+  { id: 'resource', label: 'Resources', to: '/resource' },
 ];
 
 const cancelClose = () => {
@@ -92,7 +91,7 @@ onUnmounted(cancelClose);
       class="text-foreground rounded-full bg-[#05DED5] px-4 py-2 text-sm font-semibold transition-transform hover:scale-105 xl:px-6 xl:py-3 xl:text-base"
       @focus="closeDesktopMenu"
     >
-      Get Started
+      Start a Venture Project
     </NuxtLink>
   </nav>
   <div
@@ -236,8 +235,8 @@ onUnmounted(cancelClose);
             <NuxtLink to="/why" class="hover:underline">Why Deagensie</NuxtLink>
           </p>
           <p class="mt-6 mb-4">
-            Deagensie isn&apos;t just an agency—it&apos;s a growth engine, a predictive intelligence
-            platform, and a business accelerator in one.
+            Deagensie isn&apos;t just an agency. It&apos;s a growth engine, a predictive
+            intelligence platform, and a business accelerator in one.
           </p>
           <NuxtLink
             to="/why"
