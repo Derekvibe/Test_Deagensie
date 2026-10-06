@@ -6,11 +6,11 @@ import { Icon } from '@iconify/vue';
   <section class="overflow-hidden border-t border-gray-100 bg-white py-24 text-gray-900 lg:py-32">
     <div class="mx-auto w-5/6 max-w-7xl space-y-16 lg:space-y-20">
       <!-- Section Editorial Header -->
-      <div class="mx-auto max-w-3xl space-y-4 text-center">
+      <div class="mx-auto space-y-4 text-center">
         <h2
           class="font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl 2xl:text-6xl"
         >
-          One platform. Two core engines.
+          One platform. <span class="text-[#04308F]">Two core engines.</span>
         </h2>
         <p class="text-base leading-relaxed font-normal text-gray-600 lg:text-lg">
           Seamlessly integrating Venture's Growth Lab with Talent-as-a-Service into a unified

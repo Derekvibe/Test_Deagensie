@@ -132,7 +132,7 @@ let heroObserver: IntersectionObserver | null = null;
 const progress1 = ref(100);
 const progress2 = ref(78);
 const isProfileExpanded = ref(true);
-const agentTypedText = ref('Deploying automated brand pipelines...');
+const agentTypedText = ref('Building the Next Generation Technology...');
 const ctaButtonVisible = ref(true);
 const ctaButtonScale = ref(1);
 
@@ -145,7 +145,7 @@ const tourPillText = ref('Reskill Internal Teams');
 const tourPosDesktop = reactive({ top: '30%', left: '2%' });
 const tourPosMobile = reactive({ top: '38%', left: '8%' });
 
-const fullAgentSentence = 'Deploying automated brand pipelines...';
+const fullAgentSentence = 'Building the Next Generation Technology...';
 
 const updateAnimationState = (timeMs: number) => {
   if (prefersReducedMotion.value) {
@@ -224,7 +224,7 @@ const updateAnimationState = (timeMs: number) => {
       tourPointerVisible.value = false;
     } else {
       tourPointerVisible.value = true;
-      tourPillText.value = 'Reskill Internal Teams';
+      tourPillText.value = 'Build Venture that Scales';
       tourPointerState.value = 'SOLID';
       tourPosDesktop.top = `45%`;
       tourPosDesktop.left = `2%`;
@@ -232,14 +232,14 @@ const updateAnimationState = (timeMs: number) => {
       tourPosMobile.left = `8%`;
     }
   } else if (t < 14000) {
-    // WAYPOINT 2: Profile card + Hire AI-Native Talent
+    // WAYPOINT 2: Profile card + Access Global Talent
     progress1.value = 100;
     progress2.value = 78;
     isProfileExpanded.value = true;
     agentTypedText.value = '';
     ctaButtonVisible.value = false;
     tourPointerVisible.value = t < 13700;
-    tourPillText.value = 'Hire AI-Native Talent';
+    tourPillText.value = 'Access Global Talent';
     tourPointerState.value = t > 12600 ? 'SOLID' : 'HOLLOW';
     // Desktop: near top-left of hero image
     tourPosDesktop.top = `12%`;
@@ -412,7 +412,7 @@ onBeforeUnmount(() => {
       </div>
 
       <!-- ─── Floating Composition ─── -->
-      <div v-reveal="'scale-in'" class="relative w-full">
+      <div v-reveal="'scale-in'" class="relative -mb-2 w-full">
         <!-- ■ DESKTOP LAYOUT: Side cards float beside image (lg+) -->
         <!-- Guided Cursor (desktop only) -->
         <div
@@ -866,23 +866,6 @@ onBeforeUnmount(() => {
         </div>
       </div>
 
-      <!-- Stats Metric Dividers -->
-      <div
-        class="grid grid-cols-2 gap-4 border-t border-gray-200 pt-8 sm:gap-6 sm:pt-12 lg:grid-cols-4 lg:pt-16"
-      >
-        <div
-          v-for="(stat, statIndex) in heroStats"
-          :key="stat.label"
-          :ref="(el) => setStatRef(el, statIndex)"
-          class="space-y-2 border-l-2 border-[#05DED5] pl-4 transition-all duration-300 hover:translate-x-1 lg:pl-6"
-        >
-          <p class="font-prata stat-value text-[#04308F]">
-            {{ formatStatValue(stat) }}
-          </p>
-          <p class="text-xs leading-relaxed text-gray-500 lg:text-sm">{{ stat.label }}</p>
-        </div>
-      </div>
-
       <!-- Hero Primary CTAs -->
       <div
         v-reveal="'fade-up'"
@@ -900,6 +883,23 @@ onBeforeUnmount(() => {
         >
           Find Opportunity
         </NuxtLink>
+      </div>
+
+      <!-- Stats Metric Dividers -->
+      <div
+        class="grid grid-cols-2 gap-4 border-t border-gray-200 pt-8 sm:gap-6 sm:pt-12 lg:grid-cols-4 lg:pt-16"
+      >
+        <div
+          v-for="(stat, statIndex) in heroStats"
+          :key="stat.label"
+          :ref="(el) => setStatRef(el, statIndex)"
+          class="space-y-2 border-l-2 border-[#05DED5] pl-4 transition-all duration-300 hover:translate-x-1 lg:pl-6"
+        >
+          <p class="font-prata stat-value text-[#04308F]">
+            {{ formatStatValue(stat) }}
+          </p>
+          <p class="text-xs leading-relaxed text-gray-500 lg:text-sm">{{ stat.label }}</p>
+        </div>
       </div>
     </div>
   </section>

@@ -8,7 +8,7 @@ const works = [
     title: "What if trade wasn't just transactional, but transformational?",
     description:
       'When the Department of Commerce at Loveworld Inc envisioned a global platform that would inspire trust, spark innovation, and drive authentic economic partnerships, they turned to Deagensie.',
-    tags: [{ label: 'Strategy' }, { label: 'Branding' }, { label: 'Website' }],
+    // tags: [{ label: 'Strategy' }, { label: 'Branding' }, { label: 'Website' }],
     cta: { label: 'Learn more', href: '/portfolio' },
     altText: 'Showcase of Loveworld Trade and Investment platform building',
     logoAlt: 'Loveworld Trade and Investment',
@@ -20,7 +20,7 @@ const works = [
     title: 'How do you build trust at scale across an entire economic ecosystem?',
     description:
       'The Department of Commerce envisioned a unified digital infrastructure where every SBO, vendor, contractor, merchant, and entrepreneur within the Loveworld Nation could operate transparently.',
-    tags: [{ label: 'Strategy' }, { label: 'Branding' }, { label: 'Product Development' }],
+    // tags: [{ label: 'Strategy' }, { label: 'Branding' }, { label: 'Product Development' }],
     cta: { label: 'Learn more', href: '/portfolio' },
     altText: 'Showcase of Loveworld Registry platform building',
     logoAlt: 'Loveworld Registry',
@@ -32,7 +32,7 @@ const works = [
     title: 'A powerful vision needs a powerful roadmap.',
     description:
       'When Green Plains Agro first approached Deagensie, they carried a vision of fertile fields powered by innovation, of ethical farming guided by technology, and of nourishing communities.',
-    tags: [{ label: 'Strategy' }, { label: 'Branding' }, { label: 'Website' }],
+    // tags: [{ label: 'Strategy' }, { label: 'Branding' }, { label: 'Website' }],
     cta: { label: 'Learn more', href: '/portfolio' },
     altText: 'Showcase of GreenPlains platform building',
     logoAlt: 'Green Plains',
@@ -85,7 +85,7 @@ const colorMap: Record<string, string> = {
           />
 
           <!-- Tags overlay -->
-          <div class="absolute bottom-3 left-3 flex flex-wrap gap-1.5">
+          <!-- <div class="absolute bottom-3 left-3 flex flex-wrap gap-1.5">
             <span
               v-for="tag in work.tags"
               :key="tag.label"
@@ -93,7 +93,7 @@ const colorMap: Record<string, string> = {
             >
               {{ tag.label }}
             </span>
-          </div>
+          </div> -->
         </div>
 
         <!-- Card Content -->
