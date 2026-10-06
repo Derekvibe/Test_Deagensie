@@ -284,7 +284,7 @@ export interface BlogAuthor {
   avatar?: string;
 }
 
-// A block-based body — each entry is one section of the article
+// A block-based body: each entry is one section of the article
 export type BlogBlock =
   | { type: 'paragraph'; text: string }
   | { type: 'heading'; text: string } // <h2>

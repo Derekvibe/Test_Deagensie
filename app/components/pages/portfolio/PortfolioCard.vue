@@ -33,33 +33,18 @@ const emit = defineEmits<{ (e: 'select', project: PortfolioProject): void }>();
       >
         Preview Project
       </div>
-
-      <!-- Tags overlay on hover -->
-      <div
-        class="absolute right-4 bottom-4 left-4 flex translate-y-2 flex-wrap gap-1.5 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
-      >
-        <span
-          v-for="tag in project.tags"
-          :key="tag"
-          class="rounded-full bg-white/90 px-2.5 py-0.5 text-[10px] font-bold tracking-wider text-gray-800 uppercase shadow-xs backdrop-blur-xs"
-        >
-          {{ tag }}
-        </span>
-      </div>
     </div>
 
     <!-- Footer Content -->
     <div class="flex flex-1 flex-col space-y-4 p-6 sm:p-8">
       <div class="space-y-2">
         <div
-          class="flex items-center justify-between text-xs font-semibold tracking-wider text-[#04308F] uppercase"
+          v-if="project.client"
+          class="flex items-center justify-between text-xs font-semibold tracking-wider text-gray-400 uppercase"
         >
-          <span>{{ project.tags[0] }}</span>
-          <span
-            v-if="project.client"
-            class="max-w-[140px] truncate text-[11px] font-normal text-gray-400 normal-case"
-            >{{ project.client }}</span
-          >
+          <span class="max-w-[140px] truncate text-[11px] font-normal text-gray-400 normal-case">{{
+            project.client
+          }}</span>
         </div>
         <h3
           class="font-serif text-lg leading-snug font-normal text-gray-900 transition-colors group-hover:text-[#04308F] sm:text-xl"
@@ -113,17 +98,6 @@ const emit = defineEmits<{ (e: 'select', project: PortfolioProject): void }>();
           class="absolute inset-0 bg-linear-to-t from-gray-900/40 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
         />
 
-        <!-- Tag chips bottom left -->
-        <div class="absolute bottom-4 left-4 flex flex-wrap gap-1.5">
-          <span
-            v-for="tag in project.tags.slice(0, 3)"
-            :key="tag"
-            class="rounded-full bg-white/90 px-2.5 py-0.5 text-[10px] font-bold tracking-wider text-gray-800 uppercase shadow-xs backdrop-blur-xs"
-          >
-            {{ tag }}
-          </span>
-        </div>
-
         <!-- Hover Overlay Badge -->
         <div
           class="absolute top-4 right-4 translate-y-1 rounded-full bg-white/95 px-3 py-1 text-xs font-bold text-[#04308F] opacity-0 shadow-md backdrop-blur-md transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
@@ -135,11 +109,8 @@ const emit = defineEmits<{ (e: 'select', project: PortfolioProject): void }>();
 
     <!-- Copy below -->
     <div class="flex flex-1 flex-col space-y-3 px-1">
-      <div class="flex items-center justify-between text-xs">
-        <span class="font-semibold tracking-wider text-[#04308F] uppercase">
-          {{ project.tags.join(' · ') }}
-        </span>
-        <span v-if="project.client" class="max-w-[150px] truncate font-medium text-gray-400">
+      <div v-if="project.client" class="flex items-center justify-between text-xs">
+        <span class="max-w-[150px] truncate font-medium text-gray-400">
           {{ project.client }}
         </span>
       </div>

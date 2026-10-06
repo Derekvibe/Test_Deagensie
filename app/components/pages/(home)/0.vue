@@ -375,18 +375,20 @@ onBeforeUnmount(() => {
     >
       <!-- Editorial Header Content — centred, max readable width -->
       <div v-reveal="'fade-up'" class="mx-auto max-w-4xl space-y-6 text-center">
-        <h1
-          class="font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-5xl lg:text-6xl xl:text-7xl"
+        <span
+          class="inline-block rounded-full bg-[#04308F]/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-[#04308F] uppercase"
         >
-          Build What's Next. <br class="hidden sm:inline" />
-          <span class="mt-1 block font-sans font-bold text-[#04308F] italic">
-            Find Who's Next.
-          </span>
+          Human layer powering your venture growth
+        </span>
+        <h1
+          class="mx-auto max-w-[24ch] font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-5xl lg:text-6xl xl:text-7xl"
+        >
+          Build What's Next. <br />Find Who's Next.
         </h1>
         <p
           class="mx-auto max-w-3xl text-base leading-relaxed font-normal text-gray-600 sm:text-lg lg:text-xl"
         >
-          Deagensie helps ventures build the systems they need to grow—and connects exceptional
+          Deagensie helps ventures build the systems they need to grow, and connects exceptional
           creative talent to the opportunities where they can thrive.
         </p>
         <!-- Checkmark list -->
@@ -443,18 +445,18 @@ onBeforeUnmount(() => {
         <div
           class="hidden items-center gap-6 lg:grid lg:grid-cols-[280px_1fr_300px] xl:grid-cols-[300px_1fr_320px] xl:gap-8"
         >
-          <!-- Left Card: AI Growth Course + Progress Bars -->
+          <!-- Left Card: Growth Engine Capabilities + Progress Bars -->
           <div
             class="rounded-2xl border border-gray-200 bg-white p-5 text-gray-900 shadow-2xl shadow-gray-200/80 transition-all duration-500 hover:-translate-y-2"
             :style="{ transform: `translate3d(${mouseX * -0.5}px, ${mouseY * -0.5}px, 0)` }"
           >
             <p class="mb-3 text-xs font-bold tracking-wider text-gray-400 uppercase">
-              AI Growth Course
+              Growth Engine Capabilities
             </p>
             <div class="space-y-4">
               <div>
                 <div class="mb-1 flex justify-between text-xs font-semibold">
-                  <span class="text-gray-700">Prompt Engineering</span>
+                  <span class="text-gray-700">Venture's Growth Lab</span>
                   <span class="font-mono text-[#04308F]">{{ Math.round(progress1) }}%</span>
                 </div>
                 <div class="h-2 w-full overflow-hidden rounded-full bg-gray-100">
@@ -466,7 +468,7 @@ onBeforeUnmount(() => {
               </div>
               <div>
                 <div class="mb-1 flex justify-between text-xs font-semibold">
-                  <span class="text-gray-700">Agent Orchestration</span>
+                  <span class="text-gray-700">Talent-as-a-Service (TaaS)</span>
                   <span class="font-mono text-[#04308F]">{{ Math.round(progress2) }}%</span>
                 </div>
                 <div class="h-2 w-full overflow-hidden rounded-full bg-gray-100">
@@ -498,7 +500,7 @@ onBeforeUnmount(() => {
                 class="absolute top-5 left-5 z-20 rounded-2xl border border-gray-200 bg-white/95 px-4 py-2.5 text-gray-900 shadow-xl backdrop-blur-md transition-all duration-500"
               >
                 <div class="flex items-center gap-2">
-                  <span class="text-sm font-bold">Victor E.</span>
+                  <span class="text-sm font-bold">Jennifer Author</span>
                   <span
                     class="rounded-full bg-[#05DED5]/20 px-2.5 py-0.5 text-xs font-bold text-[#04308F]"
                     >100% Match</span
@@ -625,7 +627,7 @@ onBeforeUnmount(() => {
             >
               <div class="flex items-center gap-1.5 text-[10px] font-medium text-gray-400">
                 <Icon icon="lucide:file-spreadsheet" class="text-emerald-500" />
-                H2_Forecast_Strategy.csv
+                Professional_Growth_Strategy.csv
               </div>
               <p class="font-medium text-gray-900">
                 {{ agentTypedText }}
@@ -699,7 +701,7 @@ onBeforeUnmount(() => {
                 class="absolute top-3 left-3 z-20 rounded-xl border border-gray-200 bg-white/95 px-3 py-2 text-gray-900 shadow-xl backdrop-blur-md transition-all duration-500"
               >
                 <div class="flex items-center gap-1.5">
-                  <span class="text-xs font-bold">Victor E.</span>
+                  <span class="text-xs font-bold">Jennifer Author</span>
                   <span
                     class="rounded-full bg-[#05DED5]/20 px-2 py-0.5 text-[10px] font-bold text-[#04308F]"
                     >100% Match</span
@@ -796,12 +798,12 @@ onBeforeUnmount(() => {
               class="rounded-2xl border border-gray-200 bg-white p-4 text-gray-900 shadow-xl shadow-gray-200/60"
             >
               <p class="mb-2.5 text-[10px] font-bold tracking-wider text-gray-400 uppercase">
-                AI Growth Course
+                Growth Engine Capabilities
               </p>
               <div class="space-y-3">
                 <div>
                   <div class="mb-1 flex justify-between text-[11px] font-semibold">
-                    <span class="text-gray-700">Prompt Engineering</span>
+                    <span class="text-gray-700">Venure's Growth Lab</span>
                     <span class="font-mono text-[#04308F]">{{ Math.round(progress1) }}%</span>
                   </div>
                   <div class="h-1.5 w-full overflow-hidden rounded-full bg-gray-100">
@@ -813,7 +815,7 @@ onBeforeUnmount(() => {
                 </div>
                 <div>
                   <div class="mb-1 flex justify-between text-[11px] font-semibold">
-                    <span class="text-gray-700">Agent Orchestration</span>
+                    <span class="text-gray-700">Talent-as-a-Service (TaaS)</span>
                     <span class="font-mono text-[#04308F]">{{ Math.round(progress2) }}%</span>
                   </div>
                   <div class="h-1.5 w-full overflow-hidden rounded-full bg-gray-100">
@@ -839,7 +841,7 @@ onBeforeUnmount(() => {
               >
                 <div class="flex items-center gap-1 text-[9px] font-medium text-gray-400">
                   <Icon icon="lucide:file-spreadsheet" class="text-emerald-500" />
-                  H2_Forecast_Strategy.csv
+                  Professional_Growth_Strategy.csv
                 </div>
                 <p class="font-medium text-gray-900">
                   {{ agentTypedText }}
@@ -873,11 +875,30 @@ onBeforeUnmount(() => {
           :ref="(el) => setStatRef(el, statIndex)"
           class="space-y-2 border-l-2 border-[#05DED5] pl-4 transition-all duration-300 hover:translate-x-1 lg:pl-6"
         >
-          <p class="font-mono text-3xl font-bold text-[#04308F] lg:text-4xl">
+          <p class="font-prata stat-value text-[#04308F]">
             {{ formatStatValue(stat) }}
           </p>
           <p class="text-xs leading-relaxed text-gray-500 lg:text-sm">{{ stat.label }}</p>
         </div>
+      </div>
+
+      <!-- Hero Primary CTAs -->
+      <div
+        v-reveal="'fade-up'"
+        class="flex flex-col flex-wrap items-center justify-center gap-4 pt-8 sm:flex-row lg:pt-12"
+      >
+        <NuxtLink
+          to="/contact"
+          class="w-full rounded-full bg-[#020B1E] px-8 py-4 text-center text-base font-bold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:bg-[#04308F] sm:w-auto lg:text-lg"
+        >
+          Start a New Venture
+        </NuxtLink>
+        <NuxtLink
+          to="/creatives"
+          class="w-full rounded-full border-2 border-[#04308F] bg-white px-8 py-4 text-center text-base font-bold text-[#04308F] shadow-md transition-all duration-300 hover:scale-105 hover:bg-[#04308F] hover:text-white sm:w-auto lg:text-lg"
+        >
+          Find Opportunity
+        </NuxtLink>
       </div>
     </div>
   </section>

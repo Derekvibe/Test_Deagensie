@@ -172,7 +172,7 @@ const open = defineModel<boolean>('open', { default: false });
             to="/contact"
             class="inline-block w-full rounded-full bg-[#05DED5] p-3 text-center font-semibold text-gray-950"
           >
-            Start a Venture Project
+            Enter Deagensie
           </NuxtLink>
         </div>
       </div>

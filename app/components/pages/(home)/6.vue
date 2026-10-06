@@ -17,7 +17,7 @@
           <h3
             class="font-serif text-2xl leading-snug font-normal tracking-tight lg:text-3xl xl:text-4xl"
           >
-            Start a Venture Project with Growth Lab
+            Access Global Oppurtunity
           </h3>
           <p
             class="mt-4 mb-8 text-sm leading-relaxed text-gray-300 lg:text-base lg:leading-relaxed"
@@ -52,7 +52,8 @@
           <h3
             class="font-serif text-2xl leading-snug font-normal tracking-tight lg:text-3xl xl:text-4xl"
           >
-            Join Talent-as-a-Service (TaaS) & Access Global Work
+            <!-- Join Talent-as-a-Service (TaaS) & Access Global Work -->
+            Join Our Talent Pool
           </h3>
           <p
             class="mt-4 mb-8 text-sm leading-relaxed text-white/90 lg:text-base lg:leading-relaxed"

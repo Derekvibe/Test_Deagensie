@@ -20,12 +20,12 @@ const leaders: Leader[] = [
     twitter: 'https://x.com/brightokorafor',
   },
   {
-    name: 'Victor Ephraim',
+    name: 'Jennifer Otto',
     role: 'Head of People & Operations',
     image: '/images/pages/about/team/victor-ephraim.png',
-    bio: 'Victor oversees talent acquisition, operational efficiency, and community ecosystem culture. He builds scalable operational frameworks that support borderless creative squads while ensuring exceptional quality of service.',
-    linkedin: 'https://linkedin.com/in/victor-ephraim',
-    twitter: 'https://x.com/victorephraim',
+    bio: 'Jennifer oversees talent acquisition, operational efficiency, and community ecosystem culture. She builds scalable operational frameworks that support borderless creative squads while ensuring exceptional quality of service.',
+    linkedin: 'https://linkedin.com/in/jennifer-otto',
+    twitter: 'https://x.com/jenniferotto',
   },
   {
     name: 'Anthony Olori',

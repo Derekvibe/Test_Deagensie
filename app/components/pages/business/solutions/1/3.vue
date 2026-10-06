@@ -50,7 +50,7 @@ import { Icon } from '@iconify/vue';
         <span
           class="w-fit rounded-full bg-[#E6EAF4] px-4 py-1.5 text-sm leading-relaxed text-[#04308F] uppercase"
         >
-          04 — Digital Products
+          04: Digital Products
         </span>
 
         <h3 class="mt-2 text-3xl leading-snug font-semibold">

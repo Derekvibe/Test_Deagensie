@@ -1,151 +1,32 @@
 <script setup lang="ts">
-import { useIntersectionObserver, useMediaQuery } from '@vueuse/core';
-import type { BlogCategory, BlogCategoriesResponse, PaginationMeta, BlogPost } from '~/types/api';
 import { Icon } from '@iconify/vue';
+import type { BlogPost } from '~/types/api';
 
-console.log('[blog-categories] 🚀 setup start'); // 👈 LOG
-
-const loadMoreTrigger = useTemplateRef<HTMLElement>('loadMoreTrigger');
-
-const {
-  data: blogCategoriesPage,
-  pending,
-  error,
-  refresh,
-} = await useApiData<BlogCategoriesResponse>('/blog-categories', {
-  key: 'blog-category-page-1',
-  baseURL: '/api',
-  query: {
-    page: 1,
-  },
-});
-
-console.log('[blog-categories] 📦 fetched page 1', {
-  // 👈 LOG
-  data: blogCategoriesPage.value,
-  pending: pending.value,
-  error: error.value,
-}); // 👈 LOG
-
-const blogCategories = ref<BlogCategory[]>(blogCategoriesPage.value?.data || []);
-const pagination = ref<PaginationMeta | null>(blogCategoriesPage.value?.pagination || null);
-const isFetchingNextPage = ref(false);
-
-watch(
-  blogCategoriesPage,
-  (page) => {
-    console.log('[blog-categories] 👀 blogCategoriesPage changed', page); // 👈 LOG
-    blogCategories.value = page?.data || [];
-    pagination.value = page?.pagination || null;
-  },
-  { immediate: true }
-);
-
-const hasNextPage = computed(() => {
-  const meta = pagination.value;
-
-  if (!meta) {
-    return false;
-  }
-
-  return meta.page < meta.totalPages;
-});
-
-watch(hasNextPage, (v) => console.log('[blog-categories] 🔗 hasNextPage:', v)); // 👈 LOG
-
-const fetchNextPage = async () => {
-  console.log('[blog-categories] ➡️ fetchNextPage called', {
-    // 👈 LOG
-    hasNextPage: hasNextPage.value,
-    isFetchingNextPage: isFetchingNextPage.value,
-    currentPage: pagination.value?.page,
-    totalPages: pagination.value?.totalPages,
-  }); // 👈 LOG
-
-  if (!hasNextPage.value || isFetchingNextPage.value) {
-    console.log('[blog-categories] ⛔ fetchNextPage early-return'); // 👈 LOG
-    return;
-  }
-
-  const nextPage = (pagination.value?.page || 1) + 1;
-  isFetchingNextPage.value = true;
-
-  try {
-    const page = await $fetch<BlogCategoriesResponse>('/api/blog-categories', {
-      query: {
-        page: nextPage,
-      },
-    });
-
-    console.log(`[blog-categories] ✅ fetched page ${nextPage}`, page); // 👈 LOG
-
-    blogCategories.value = [...blogCategories.value, ...page.data];
-    pagination.value = page.pagination;
-
-    console.log('[blog-categories] 🧮 after append', {
-      // 👈 LOG
-      totalCategories: blogCategories.value.length,
-      pagination: pagination.value,
-    }); // 👈 LOG
-  } catch (err) {
-    console.error('[blog-categories] ❌ fetchNextPage failed', err); // 👈 LOG
-    throw err;
-  } finally {
-    isFetchingNextPage.value = false;
-  }
-};
-
-useIntersectionObserver(loadMoreTrigger, ([entry]) => {
-  console.log('[blog-categories] 👁️ intersection', entry?.isIntersecting); // 👈 LOG
-  if (entry?.isIntersecting) {
-    void fetchNextPage();
-  }
-});
-
-const spacingStyles = ref<Partial<{ left: string; right: string }>>({
-  left: 'calc((100% - ((11 / 12) * 100%)) / 4)',
-  right: 'calc((100% - ((11 / 12) * 100%)) / 4)',
-});
-
-onMounted(() => {
-  console.log('[blog-categories] 🧩 mounted'); // 👈 LOG
-  // --- existing spacingStyles logic ---
-  const headerDiv = document.querySelector('#__nuxt > header > div');
-  console.log('[blog-categories] 🎯 headerDiv found?', !!headerDiv); // 👈 LOG
-  if (headerDiv) {
-    const updateMargins = () => {
-      spacingStyles.value = {
-        left: `${parseFloat(getComputedStyle(headerDiv).marginLeft)}px`,
-        right: `${parseFloat(getComputedStyle(headerDiv).marginRight)}px`,
-      };
-      console.log('[blog-categories] 📐 spacingStyles updated', spacingStyles.value); // 👈 LOG
-    };
-    const resizeObserver = new ResizeObserver(updateMargins);
-    resizeObserver.observe(headerDiv);
-    updateMargins();
-    onUnmounted(() => {
-      console.log('[blog-categories] 💀 unmounted, disconnecting observer'); // 👈 LOG
-      resizeObserver.disconnect();
-    });
-  }
-});
-
-const isMobile = useMediaQuery('(max-width: 1023px)');
-watch(isMobile, (v) => console.log('[blog-categories] 📱 isMobile:', v)); // 👈 LOG
+const activeCategory = ref<string>('all');
+const searchQuery = ref<string>('');
 
 // ─────────────────────────────────────────────────────────────
-// DEMO DATA — remove once the real API is wired up
+// EDITORIAL BLOG DATA
 // ─────────────────────────────────────────────────────────────
+
+const categories = [
+  { key: 'all', label: 'All Articles' },
+  { key: 'strategy', label: 'Strategy' },
+  { key: 'branding', label: 'Brand Development' },
+  { key: 'marketing', label: 'Marketing & Growth' },
+  { key: 'technology', label: 'Digital Products' },
+  { key: 'creative-economy', label: 'Creative Talent' },
+];
 
 const featuredPost: BlogPost = {
   id: '1',
   slug: 'future-of-ai-driven-branding',
   title: 'The Future of AI-Driven Branding: How Intelligence Transforms Creative Strategy',
   excerpt:
-    'Discover how artificial intelligence is revolutionizing brand development, from predictive consumer behavior analysis to real-time marketing optimization. Learn why the most successful brands are integrating AI into their creative workflows.',
+    'Discover how artificial intelligence is revolutionizing brand development, from predictive consumer behavior analysis to real-time marketing optimization.',
   cover: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&q=80',
-  category: 'Featured',
-  categoryKey: 'featured',
+  category: 'Strategy & AI',
+  categoryKey: 'strategy',
   publishedAt: '2026-03-15',
   readMinutes: 8,
   featured: true,
@@ -159,17 +40,17 @@ const posts: BlogPost[] = [
     excerpt:
       'How African creatives are breaking geographical barriers and accessing international opportunities without leaving home.',
     cover: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80',
-    category: 'Creative Economy',
+    category: 'Creative Talent',
     categoryKey: 'creative-economy',
     publishedAt: '2026-03-12',
-    readMinutes: 1,
+    readMinutes: 6,
   },
   {
     id: '3',
     slug: 'startup-to-scale-up',
     title: 'From Startup to Scale-up: Engineering Growth That Lasts',
     excerpt:
-      'The strategic frameworks that transform ambitious startups into sustainable, scalable businesses.',
+      'The strategic frameworks and positioning maps that transform ambitious ventures into sustainable market leaders.',
     cover: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80',
     category: 'Strategy',
     categoryKey: 'strategy',
@@ -181,23 +62,23 @@ const posts: BlogPost[] = [
     slug: 'brands-need-to-evolve',
     title: 'Why Your Brand Needs to Evolve, Not Just Exist',
     excerpt:
-      'Exploring the difference between static brand identities and intelligent, adaptive brand systems.',
+      'Exploring the crucial difference between static logo assets and intelligent, living brand design systems.',
     cover: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80',
-    category: 'Branding',
+    category: 'Brand Development',
     categoryKey: 'branding',
     publishedAt: '2026-03-08',
-    readMinutes: 6,
+    readMinutes: 5,
   },
   {
     id: '5',
     slug: 'data-driven-marketing',
-    title: 'Data-Driven Marketing: Beyond Vanity Metrics',
+    title: 'Data-Driven Marketing: Moving Beyond Vanity Metrics',
     excerpt:
-      'How to move from impressions and likes to meaningful business outcomes and revenue growth.',
-    cover: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80',
-    category: 'Marketing',
+      'How to transition from high impression numbers to genuine buyer conversion engines and scalable revenue growth.',
+    cover: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
+    category: 'Marketing & Growth',
     categoryKey: 'marketing',
-    publishedAt: '2026-03-12',
+    publishedAt: '2026-03-05',
     readMinutes: 5,
   },
   {
@@ -205,299 +86,253 @@ const posts: BlogPost[] = [
     slug: 'psychology-of-visual-identity',
     title: 'The Psychology of Visual Identity: What Makes Brands Memorable',
     excerpt:
-      'Understanding the cognitive science behind effective brand design and visual communication.',
+      'Understanding the cognitive science behind memorable visual design, typography hierarchy, and emotional connection.',
     cover: 'https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&q=80',
-    category: 'Design',
-    categoryKey: 'design',
-    publishedAt: '2026-03-10',
+    category: 'Brand Development',
+    categoryKey: 'branding',
+    publishedAt: '2026-03-02',
     readMinutes: 7,
   },
   {
     id: '7',
     slug: 'digital-products-users-want',
-    title: 'Building Digital Products That Users Actually Want',
+    title: 'Building Intelligent Digital Products Engineered for High Conversion',
     excerpt:
-      'A practical guide to user-centered design and product development in the African market.',
+      'A practical blueprint for user-centered design, performant web platforms, and seamless e-commerce integration.',
     cover: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80',
-    category: 'Technology',
+    category: 'Digital Products',
     categoryKey: 'technology',
-    publishedAt: '2026-03-08',
-    readMinutes: 6,
-  },
-  {
-    id: '8',
-    slug: 'data-driven-marketing-2',
-    title: 'Data-Driven Marketing: Beyond Vanity Metrics',
-    excerpt:
-      'How to move from impressions and likes to meaningful business outcomes and revenue growth.',
-    cover: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80',
-    category: 'Marketing',
-    categoryKey: 'marketing',
-    publishedAt: '2026-03-12',
-    readMinutes: 5,
-  },
-  {
-    id: '9',
-    slug: 'psychology-of-visual-identity-2',
-    title: 'The Psychology of Visual Identity: What Makes Brands Memorable',
-    excerpt:
-      'Understanding the cognitive science behind effective brand design and visual communication.',
-    cover: 'https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&q=80',
-    category: 'Design',
-    categoryKey: 'design',
-    publishedAt: '2026-03-10',
-    readMinutes: 7,
-  },
-  {
-    id: '10',
-    slug: 'digital-products-users-want-2',
-    title: 'Building Digital Products That Users Actually Want',
-    excerpt:
-      'A practical guide to user-centered design and product development in the African market.',
-    cover: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80',
-    category: 'Technology',
-    categoryKey: 'technology',
-    publishedAt: '2026-03-08',
+    publishedAt: '2026-02-28',
     readMinutes: 6,
   },
 ];
+
+const filteredPosts = computed(() => {
+  return posts.filter((post) => {
+    const matchesCategory =
+      activeCategory.value === 'all' || post.categoryKey === activeCategory.value;
+    const matchesSearch =
+      !searchQuery.value ||
+      post.title.toLowerCase().includes(searchQuery.value.toLowerCase()) ||
+      post.excerpt.toLowerCase().includes(searchQuery.value.toLowerCase());
+    return matchesCategory && matchesSearch;
+  });
+});
 </script>
 
 <template>
-  <div>
-    <!-- ═══════════════════════════════════════════════════════
-         SHARED CONTAINER — all three sections live inside this
-         ═══════════════════════════════════════════════════════ -->
-    <div class=" ">
+  <div class="bg-slate-50/50 py-10 lg:py-14">
+    <div class="mx-auto w-5/6 max-w-7xl">
       <!-- ═══════════════════════════════════════════════════════
-           CATEGORY FILTER BAR
+           CATEGORY FILTER & SEARCH BAR
            ═══════════════════════════════════════════════════════ -->
-      <section class="flex w-full flex-col gap-6 py-6 lg:flex-row lg:py-14">
-        <div
-          :class="[
-            'lg:flex-1 lg:overflow-hidden',
-            { 'grid grid-cols-1 grid-rows-1 *:[grid-area:1/1]': error || !blogCategories.length },
-          ]"
-        >
-          <div
-            v-if="error"
-            class="mx-auto w-5/6 max-w-7xl content-center text-center text-sm leading-relaxed"
+      <div
+        class="mb-10 flex flex-col gap-5 border-b border-gray-200/80 pb-6 lg:flex-row lg:items-center lg:justify-between"
+      >
+        <!-- Filter Pills -->
+        <div class="flex flex-wrap items-center gap-2">
+          <button
+            v-for="cat in categories"
+            :key="cat.key"
+            type="button"
+            :class="[
+              'rounded-full px-3.5 py-1.5 text-xs font-semibold transition-all duration-300 sm:text-sm',
+              activeCategory === cat.key
+                ? 'bg-[#04308F] text-white shadow-sm ring-1 ring-[#04308F]'
+                : 'border border-gray-200/80 bg-white text-gray-700 hover:bg-gray-100',
+            ]"
+            @click="activeCategory = cat.key"
           >
-            <p>Failed to load blogCategories. Please try again.</p>
-            <button type="button" @click="refresh()">Retry</button>
-          </div>
-          <div
-            v-if="!blogCategories.length"
-            class="mx-auto w-5/6 max-w-7xl content-center text-center text-sm leading-relaxed"
-          >
-            <p>
-              No blog categories available. Please check back later or contact support for
-              assistance.
-            </p>
-          </div>
-          <Carousel>
-            <CarouselPrevious class="z-1 disabled:hidden" :style="{ left: spacingStyles.left }" />
-            <CarouselNext
-              class="z-1 disabled:hidden"
-              :style="{
-                right: isMobile ? spacingStyles.right : `calc(${spacingStyles.right} / 2)`,
-              }"
-            />
-            <CarouselContent
-              class="ml-0 gap-3 py-px lg:gap-4"
-              :style="{
-                marginLeft: spacingStyles.left,
-                ...(isMobile && { marginRight: spacingStyles.right }),
-              }"
-            >
-              <template v-if="blogCategories.length">
-                <CarouselItem class="basis-auto pl-0">
-                  <NuxtLink
-                    to="/blog"
-                    class="inline-block rounded-full px-3 py-1.5 text-xs leading-normal ring-1 ring-current lg:px-6 lg:py-3 lg:text-base [&.router-link-exact-active]:bg-[#05F4EA] [&.router-link-exact-active]:ring-0"
-                    >All Posts</NuxtLink
-                  >
-                </CarouselItem>
-                <CarouselItem
-                  v-for="{ id, key, label } in blogCategories"
-                  :key="id"
-                  class="basis-auto pl-0"
-                >
-                  <NuxtLink
-                    :to="`/blog/category/${key}`"
-                    class="inline-block rounded-full px-3 py-1.5 text-xs leading-normal ring-1 ring-current lg:px-6 lg:py-3 lg:text-base [&.router-link-exact-active]:bg-[#05F4EA] [&.router-link-exact-active]:ring-0"
-                    >{{ label }}</NuxtLink
-                  >
-                </CarouselItem>
-                <CarouselItem
-                  v-if="hasNextPage"
-                  ref="loadMoreTrigger"
-                  aria-hidden
-                  class="basis-auto pl-0"
-                >
-                  <Skeleton
-                    class="box-content h-lh w-[75px] rounded-full px-3 py-1.5 text-xs leading-normal lg:px-6 lg:py-3 lg:text-base"
-                    :class="{ 'animate-none': !isFetchingNextPage }"
-                  />
-                </CarouselItem>
-              </template>
-              <template v-else>
-                <CarouselItem v-for="n in 7" :key="n" class="basis-auto pl-0">
-                  <Skeleton
-                    class="box-content h-lh w-[75px] rounded-full px-3 py-1.5 text-xs leading-normal lg:w-[116px] lg:px-6 lg:py-3 lg:text-base"
-                    :class="{
-                      'animate-none opacity-25': !pending,
-                      'w-[74px] lg:w-[114px]': n === 2,
-                      'w-[76px] lg:w-[117px]': n === 3,
-                      'w-[82px] lg:w-[125px]': n === 4,
-                      'w-[65px] lg:w-[102px]': n === 5,
-                      'w-[91px] lg:w-[138px]': n === 6,
-                      'w-[130px] lg:w-[189px]': n === 7,
-                    }"
-                  />
-                </CarouselItem>
-              </template>
-              <CarouselItem
-                v-if="!isMobile"
-                class="basis-auto pl-0"
-                :style="{ width: `calc(${spacingStyles.right} / 6)` }"
-              />
-            </CarouselContent>
-          </Carousel>
+            {{ cat.label }}
+          </button>
         </div>
-        <InputGroup
-          :style="{ ...(!isMobile && { marginRight: spacingStyles.right }) }"
-          class="mx-auto w-5/6 max-w-7xl shrink-0 rounded-full lg:mx-0 lg:h-auto lg:w-auto lg:max-w-none lg:min-w-72"
-        >
-          <InputGroupAddon align="inline-start">
-            <Icon icon="hugeicons:search-01" />
-          </InputGroupAddon>
-          <InputGroupInput type="search" placeholder="Search articles" class="shadow-none" />
-        </InputGroup>
-      </section>
+
+        <!-- Search Bar -->
+        <div class="relative w-full lg:w-64">
+          <Icon
+            icon="hugeicons:search-01"
+            class="absolute top-1/2 left-3.5 -translate-y-1/2 text-base text-gray-400"
+          />
+          <input
+            v-model="searchQuery"
+            type="search"
+            placeholder="Search articles..."
+            class="w-full rounded-full border border-gray-200 bg-white py-2 pr-4 pl-9 text-xs text-gray-900 placeholder-gray-400 shadow-2xs transition focus:border-[#04308F] focus:ring-1 focus:ring-[#04308F] focus:outline-none sm:text-sm"
+          />
+        </div>
+      </div>
 
       <!-- ═══════════════════════════════════════════════════════
-           FEATURED ARTICLE
+           MODERATE STANDARD FEATURED ARTICLE CARD
            ═══════════════════════════════════════════════════════ -->
-      <section class="mb-14 bg-[#F6F6F6] py-16">
-        <div class="mx-auto w-full max-w-7xl px-4 md:px-6 lg:px-8">
-          <h1 class="mb-6 text-3xl font-semibold tracking-tight text-neutral-900 md:text-4xl">
-            Featured Article
-          </h1>
+      <section v-if="activeCategory === 'all' && !searchQuery" class="mb-12">
+        <div class="mb-4 flex items-center justify-between">
+          <h2 class="font-serif text-xl font-semibold tracking-tight text-gray-900 sm:text-2xl">
+            Featured Highlight
+          </h2>
+          <span class="text-[11px] font-semibold tracking-widest text-[#04308F] uppercase">
+            Top Pick
+          </span>
+        </div>
 
-          <NuxtLink
-            :to="`/blog/${featuredPost.slug}`"
-            class="group grid grid-cols-1 gap-6 rounded-2xl p-4 transition md:grid-cols-2 md:gap-8 md:p-6"
-          >
-            <!-- Cover image -->
-            <div class="relative overflow-hidden rounded-xl">
-              <img
-                :src="featuredPost.cover"
-                :alt="featuredPost.title"
-                class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-[1.02]"
-                loading="lazy"
-              />
-              <span
-                v-if="featuredPost.featured"
-                class="absolute top-3 left-3 rounded-full bg-[#B1BFDC] px-5 py-2 text-xs font-medium text-neutral-800 backdrop-blur"
-              >
-                Featured
-              </span>
-            </div>
+        <NuxtLink
+          :to="`/blog/${featuredPost.slug}`"
+          class="group overflow-hidden rounded-2xl border border-gray-200/80 bg-white p-5 shadow-xs transition-all duration-300 hover:border-[#04308F]/40 hover:shadow-md lg:grid lg:grid-cols-12 lg:gap-6 lg:p-6"
+        >
+          <!-- Cover Image -->
+          <div class="overflow-hidden rounded-xl lg:col-span-5 lg:h-full">
+            <img
+              :src="featuredPost.cover"
+              :alt="featuredPost.title"
+              class="h-48 w-full object-cover transition-transform duration-500 group-hover:scale-102 lg:h-full"
+              loading="lazy"
+            />
+          </div>
 
-            <!-- Meta + text -->
-            <div class="flex flex-col justify-center gap-4">
-              <div class="flex items-center gap-4 text-xs text-neutral-500">
-                <span class="inline-flex items-center gap-1.5">
-                  <Icon icon="hugeicons:calendar-03" class="size-4" />
+          <!-- Content Details -->
+          <div class="mt-4 flex flex-col justify-between space-y-4 lg:col-span-7 lg:mt-0 lg:py-1">
+            <div class="space-y-3">
+              <div class="flex items-center gap-2.5 text-xs text-gray-500">
+                <span
+                  class="rounded-full bg-[#04308F]/10 px-2.5 py-0.5 font-semibold text-[#04308F]"
+                >
+                  {{ featuredPost.category }}
+                </span>
+                <span>·</span>
+                <span>
                   {{
                     new Date(featuredPost.publishedAt).toLocaleDateString('en-US', {
-                      month: 'long',
+                      month: 'short',
                       day: 'numeric',
                       year: 'numeric',
                     })
                   }}
                 </span>
-                <span class="inline-flex items-center gap-1.5">
-                  <Icon icon="akar-icons:eye-open" class="size-4" />
-                  {{ featuredPost.readMinutes }} min read
-                </span>
+                <span>·</span>
+                <span>{{ featuredPost.readMinutes }} min read</span>
               </div>
 
-              <h2
-                class="text-2xl leading-snug font-semibold tracking-tight text-neutral-900 md:text-3xl"
+              <h3
+                class="font-serif text-xl leading-snug font-semibold tracking-tight text-gray-900 transition-colors group-hover:text-[#04308F] sm:text-2xl"
               >
                 {{ featuredPost.title }}
-              </h2>
+              </h3>
 
-              <p class="text-sm leading-relaxed text-neutral-600">
+              <p class="text-xs leading-relaxed text-gray-600 sm:text-sm">
                 {{ featuredPost.excerpt }}
               </p>
+            </div>
 
+            <div class="pt-1">
               <span
-                class="mt-2 inline-flex w-fit items-center gap-2 rounded-full bg-[#05DED5] px-4 py-2 text-sm font-medium text-neutral-900 transition group-hover:bg-[#96e8e6]"
+                class="inline-flex items-center gap-1.5 text-xs font-semibold text-[#04308F] transition-transform group-hover:translate-x-1"
               >
-                Read full article
+                Read Article
                 <Icon icon="hugeicons:arrow-right-01" class="size-4" />
               </span>
             </div>
-          </NuxtLink>
-        </div>
+          </div>
+        </NuxtLink>
       </section>
 
       <!-- ═══════════════════════════════════════════════════════
-           LATEST ARTICLES
+           LATEST ARTICLES GRID
            ═══════════════════════════════════════════════════════ -->
-      <section class="mx-auto w-full max-w-7xl px-4 pb-16 md:px-6 lg:px-8">
-        <h2 class="mb-6 text-3xl font-semibold tracking-tight text-neutral-900 md:text-4xl">
-          Latest Article
-        </h2>
+      <section>
+        <div class="mb-6 flex items-center justify-between">
+          <h2 class="font-serif text-xl font-semibold tracking-tight text-gray-900 sm:text-2xl">
+            {{ activeCategory === 'all' ? 'Latest Articles' : 'Articles' }}
+          </h2>
+          <span class="text-xs text-gray-500">
+            Showing {{ filteredPosts.length }}
+            {{ filteredPosts.length === 1 ? 'article' : 'articles' }}
+          </span>
+        </div>
 
-        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div
+          v-if="filteredPosts.length > 0"
+          class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        >
           <NuxtLink
-            v-for="post in posts"
+            v-for="post in filteredPosts"
             :key="post.id"
             :to="`/blog/${post.slug}`"
-            class="group flex flex-col overflow-hidden rounded-2xl bg-white ring-1 ring-neutral-200 transition hover:ring-neutral-300"
+            class="group flex flex-col overflow-hidden rounded-2xl border border-gray-200/80 bg-white p-4 shadow-2xs transition-all duration-300 hover:-translate-y-0.5 hover:border-[#04308F]/40 hover:shadow-md"
           >
-            <div class="overflow-hidden">
+            <!-- Card Image -->
+            <div class="relative overflow-hidden rounded-xl">
               <img
                 :src="post.cover"
                 :alt="post.title"
-                class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+                class="aspect-16/10 w-full object-cover transition-transform duration-500 group-hover:scale-103"
                 loading="lazy"
               />
-            </div>
-
-            <div class="flex flex-1 flex-col gap-3 p-4">
-              <span class="text-xs font-medium text-blue-600">
+              <span
+                class="absolute top-2.5 left-2.5 rounded-full bg-black/65 px-2.5 py-0.5 text-[10px] font-semibold text-white backdrop-blur-md"
+              >
                 {{ post.category }}
               </span>
+            </div>
 
-              <h3
-                class="text-base leading-snug font-semibold text-neutral-900 group-hover:underline"
+            <!-- Card Content -->
+            <div class="flex flex-1 flex-col justify-between pt-3">
+              <div class="space-y-2">
+                <div class="flex items-center gap-2 text-xs text-gray-400">
+                  <span>
+                    {{
+                      new Date(post.publishedAt).toLocaleDateString('en-US', {
+                        month: 'short',
+                        day: 'numeric',
+                        year: 'numeric',
+                      })
+                    }}
+                  </span>
+                  <span>·</span>
+                  <span>{{ post.readMinutes }} min read</span>
+                </div>
+
+                <h3
+                  class="font-serif text-base leading-snug font-semibold tracking-tight text-gray-900 transition-colors group-hover:text-[#04308F]"
+                >
+                  {{ post.title }}
+                </h3>
+
+                <p class="line-clamp-2 text-xs leading-relaxed text-gray-600">
+                  {{ post.excerpt }}
+                </p>
+              </div>
+
+              <!-- Read More CTA -->
+              <div
+                class="mt-4 flex items-center gap-1 text-xs font-semibold text-[#04308F] transition-transform group-hover:translate-x-0.5"
               >
-                {{ post.title }}
-              </h3>
-
-              <p class="line-clamp-3 text-sm leading-relaxed text-neutral-600">
-                {{ post.excerpt }}
-              </p>
-
-              <div class="mt-auto flex items-center justify-between pt-3 text-xs text-neutral-500">
-                <span>
-                  {{
-                    new Date(post.publishedAt).toLocaleDateString('en-US', {
-                      month: 'long',
-                      day: 'numeric',
-                      year: 'numeric',
-                    })
-                  }}
-                </span>
-                <span>{{ post.readMinutes }} min read</span>
+                <span>Read Story</span>
+                <Icon icon="hugeicons:arrow-right-01" class="size-3.5" />
               </div>
             </div>
           </NuxtLink>
+        </div>
+
+        <!-- Empty State -->
+        <div
+          v-else
+          class="rounded-2xl border border-dashed border-gray-300 bg-white p-10 text-center"
+        >
+          <Icon icon="hugeicons:document-not-found" class="mx-auto size-10 text-gray-400" />
+          <h3 class="mt-3 text-sm font-semibold text-gray-900">No articles found</h3>
+          <p class="mt-1 text-xs text-gray-500">
+            Try adjusting your search criteria or category filter.
+          </p>
+          <button
+            type="button"
+            class="mt-3 rounded-full bg-[#04308F] px-4 py-1.5 text-xs font-semibold text-white transition hover:bg-[#032266]"
+            @click="
+              activeCategory = 'all';
+              searchQuery = '';
+            "
+          >
+            Reset Filters
+          </button>
         </div>
       </section>
     </div>

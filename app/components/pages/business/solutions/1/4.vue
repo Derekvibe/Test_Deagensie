@@ -49,7 +49,7 @@ import { Icon } from '@iconify/vue';
         <span
           class="rounded-full bg-[#E6EAF4] px-4 py-1.5 text-sm leading-relaxed text-[#04308F] uppercase"
         >
-          05 — Talent-As-A-Service
+          05: Talent-As-A-Service
         </span>
 
         <h3 class="mt-2 text-3xl leading-snug font-semibold">
@@ -60,7 +60,7 @@ import { Icon } from '@iconify/vue';
           We empower aspiring and established creatives with the skills needed to thrive in the Our
           platform ensures African creatives can find fulfilling careers while staying connected to
           their roots. For startup founders, our platform provides access to in-demand creative
-          talents needed to thrive — all within your resource constraints.
+          talents needed to thrive, all within your resource constraints.
         </p>
 
         <ul class="mt-4 space-y-4">

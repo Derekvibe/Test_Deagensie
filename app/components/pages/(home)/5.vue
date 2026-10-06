@@ -5,7 +5,7 @@ const works = [
   {
     logo: '/images/works/lw-trade-and-investment-forum/logo.png',
     thumbnail: '/images/works/lw-trade-and-investment-forum/showcase.webp',
-    title: "What if trade wasn't just transactional—but transformational?",
+    title: "What if trade wasn't just transactional, but transformational?",
     description:
       'When the Department of Commerce at Loveworld Inc envisioned a global platform that would inspire trust, spark innovation, and drive authentic economic partnerships, they turned to Deagensie.',
     tags: [{ label: 'Strategy' }, { label: 'Branding' }, { label: 'Website' }],

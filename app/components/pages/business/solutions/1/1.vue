@@ -18,7 +18,7 @@ import { Icon } from '@iconify/vue';
           </span>
 
           <h4 class="mt-2 text-2xl leading-normal font-semibold xl:text-3xl xl:leading-snug">
-            From Bronze to Platinum<br />— a tier for every stage
+            From Bronze to Platinum<br />a tier for every stage
           </h4>
 
           <div class="bg-background mt-4 rounded-[calc(var(--radius)+2px)] p-4">
@@ -67,7 +67,7 @@ import { Icon } from '@iconify/vue';
           <span
             class="rounded-full bg-[#E6EAF4] px-4 py-1.5 text-sm leading-relaxed text-[#04308F] uppercase"
           >
-            02 — Brand Development
+            02: Brand Development
           </span>
 
           <h3 class="mt-2 text-3xl leading-snug font-semibold">
@@ -77,7 +77,7 @@ import { Icon } from '@iconify/vue';
           <p class="mt-4 text-xl leading-normal">
             Effective brands transcend logos, advertising campaigns, and social media presence. The
             real power of a brand today lies in creating dynamic, meaningful relationships with
-            customers that evolve over time. We build brands that don't just exist — they lead.
+            customers that evolve over time. We build brands that don't just exist, they lead.
           </p>
 
           <ul class="mt-4 space-y-4">

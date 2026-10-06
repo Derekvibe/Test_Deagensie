@@ -32,24 +32,26 @@ useSeoMeta({
 </script>
 
 <template>
-  <article v-if="post" class="w-full pt-10 pb-20">
+  <article v-if="post" class="w-full bg-slate-50/30 pt-28 pb-20">
     <!-- ═══════════════════════════════════════════════════════
          HEADER — contained width, generous top padding
          ═══════════════════════════════════════════════════════ -->
-    <header class="mx-auto w-full max-w-7xl px-4 pt-10 md:px-6 lg:px-8">
+    <header class="mx-auto w-full max-w-5xl px-4 md:px-6 lg:px-8">
       <!-- Back link -->
       <NuxtLink
         to="/blog"
-        class="inline-flex items-center gap-2 text-sm font-medium text-[#04308F] hover:underline"
+        class="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-xs font-semibold text-[#04308F] shadow-sm transition hover:bg-gray-50"
       >
         <Icon icon="hugeicons:arrow-left-01" class="size-4" />
-        Back to Blogg
+        Back to Blog
       </NuxtLink>
 
       <!-- Category · date · read time -->
-      <div class="mt-6 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-[#949494]">
-        <span class="font-medium text-[#04308F]">{{ post.category }}</span>
-        <span class="text[#949494]">·</span>
+      <div class="mt-8 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-gray-500">
+        <span class="rounded-full bg-[#04308F]/10 px-3 py-1 font-semibold text-[#04308F]">{{
+          post.category
+        }}</span>
+        <span>·</span>
         <span>
           {{
             new Date(post.publishedAt).toLocaleDateString('en-US', {
@@ -59,19 +61,19 @@ useSeoMeta({
             })
           }}
         </span>
-        <span class="text-neutral-300">·</span>
+        <span>·</span>
         <span>{{ post.readMinutes }} min read</span>
       </div>
 
       <!-- Title -->
       <h1
-        class="mt-4 text-3xl leading-tight font-semibold tracking-tight text-neutral-900 md:text-4xl lg:text-5xl"
+        class="mt-4 font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
       >
         {{ post.title }}
       </h1>
 
       <!-- Excerpt -->
-      <p class="mt-5 text-base leading-relaxed text-neutral-600">
+      <p class="mt-5 text-base leading-relaxed text-gray-600 sm:text-lg">
         {{ post.excerpt }}
       </p>
     </header>

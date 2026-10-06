@@ -8,7 +8,7 @@ const testimonials = [
     role: 'Chairman',
     company: 'Kuda Bank',
     testimonial:
-      "Partnering with Deagensie on Green Plains Agro's branding and digital innovations projects was a seamless and rewarding experience — their strategic insight and creative excellence brought the vision to life.",
+      "Partnering with Deagensie on Green Plains Agro's branding and digital innovations projects was a seamless and rewarding experience; their strategic insight and creative excellence brought the vision to life.",
   },
   {
     photo: '/images/pages/(home)/testimonials/victor-ephraim.png',
@@ -52,7 +52,7 @@ const testimonials = [
         <h2
           class="font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
         >
-          Trusted by tech leaders
+          Trusted by industry leaders
         </h2>
       </div>
 

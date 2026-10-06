@@ -91,9 +91,30 @@ onUnmounted(cancelClose);
       class="text-foreground rounded-full bg-[#05DED5] px-4 py-2 text-sm font-semibold transition-transform hover:scale-105 xl:px-6 xl:py-3 xl:text-base"
       @focus="closeDesktopMenu"
     >
-      Start a Venture Project
+      Enter Deagensie
     </NuxtLink>
   </nav>
+
+  <!-- Desktop Navigation High-Opacity Neutral Gray Backdrop Overlay -->
+  <Teleport to="body">
+    <Transition
+      enter-active-class="transition-opacity duration-200 ease-out"
+      enter-from-class="opacity-0"
+      enter-to-class="opacity-100"
+      leave-active-class="transition-opacity duration-150 ease-in"
+      leave-from-class="opacity-100"
+      leave-to-class="opacity-0"
+    >
+      <div
+        v-if="activeDesktopMenu"
+        class="fixed inset-0 z-40 bg-gray-900/90 backdrop-blur-md"
+        aria-hidden="true"
+        @click="closeDesktopMenu"
+        @mouseenter="closeDesktopMenu"
+      />
+    </Transition>
+  </Teleport>
+
   <div
     v-if="activeDesktopMenu"
     class="text-popover-foreground animate-in fade-in-0 zoom-in-95 bg-popover fixed top-[calc((var(--spacing)*20)+(var(--spacing)*1))] left-1/2 z-50 -translate-x-1/2 rounded-[calc(var(--radius)+2px)] shadow-md outline-none"

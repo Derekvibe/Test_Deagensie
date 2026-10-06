@@ -3,7 +3,7 @@ import { Icon } from '@iconify/vue';
 </script>
 
 <template>
-  <section class="overflow-hidden bg-white py-24 text-gray-900 lg:py-32">
+  <section class="overflow-hidden bg-white py-16 text-gray-900 lg:py-20">
     <div class="mx-auto w-5/6 max-w-7xl space-y-16 lg:space-y-20">
       <!-- Section Editorial Header -->
       <div v-reveal="'fade-up'" class="mx-auto max-w-4xl space-y-4 text-center">
@@ -16,8 +16,7 @@ import { Icon } from '@iconify/vue';
           class="text-center font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl 2xl:text-6xl"
         >
           The future of business growth isn't just about having a great idea or finding great
-          talent,<br class="hidden sm:inline" />
-          <span class="text-[#04308F] italic">it's about connecting both.</span>
+          talent, <span class="text-[#04308F] italic">it's about connecting both.</span>
         </h2>
       </div>
 
@@ -338,25 +337,6 @@ import { Icon } from '@iconify/vue';
             </div>
           </div>
         </article>
-      </div>
-
-      <!-- Dual Primary CTAs -->
-      <div
-        v-reveal="'fade-up'"
-        class="flex flex-col flex-wrap items-center justify-center gap-4 pt-8 sm:flex-row"
-      >
-        <NuxtLink
-          to="/contact"
-          class="w-full rounded-full bg-[#020B1E] px-8 py-4 text-center text-base font-bold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:bg-[#04308F] sm:w-auto lg:text-lg"
-        >
-          Start a Venture Project
-        </NuxtLink>
-        <NuxtLink
-          to="/creatives"
-          class="w-full rounded-full border-2 border-[#04308F] bg-white px-8 py-4 text-center text-base font-bold text-[#04308F] shadow-md transition-all duration-300 hover:scale-105 hover:bg-[#04308F] hover:text-white sm:w-auto lg:text-lg"
-        >
-          Find an Opportunity
-        </NuxtLink>
       </div>
     </div>
   </section>

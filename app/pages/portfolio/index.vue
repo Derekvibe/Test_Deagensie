@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { ComponentPublicInstance } from 'vue';
-import { demoProjects, demoStats, portfolioFilters } from '~/data/portfolio';
+import { demoProjects, demoStats } from '~/data/portfolio';
 import { Icon } from '@iconify/vue';
 import type { PortfolioProject } from '~/types/api';
 import PortfolioCard from '~/components/pages/portfolio/PortfolioCard.vue';
@@ -86,7 +86,7 @@ onMounted(() => {
 
 // ─── SEO Meta ───────────────────────────────────────────────
 useSeoMeta({
-  title: 'Our Portfolio — Deagensie',
+  title: 'Our Portfolio | Deagensie',
   description:
     "We don't just create business solutions, we craft experiences that captivate, connect and convert.",
 });
@@ -171,43 +171,6 @@ useSeoMeta({
               <p class="text-xs font-medium text-gray-300">Verified Reviews</p>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════════════════
-         CATEGORY FILTER PILLS BAR (Non-Sticky)
-         ══════════════════════════════════════════════ -->
-    <section class="border-b border-gray-100 bg-white py-6 shadow-xs">
-      <div class="mx-auto w-5/6 max-w-7xl">
-        <div class="no-scrollbar flex flex-wrap items-center gap-2.5 overflow-x-auto py-1">
-          <!-- All pill -->
-          <button
-            type="button"
-            class="shrink-0 rounded-full px-5 py-2.5 text-xs font-semibold transition-all duration-300 sm:text-sm"
-            :class="
-              activeFilter === null
-                ? 'scale-105 bg-[#04308F] text-white shadow-md shadow-[#04308F]/20'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-            "
-            @click="activeFilter = null"
-          >
-            All Projects
-          </button>
-          <button
-            v-for="filter in portfolioFilters"
-            :key="filter"
-            type="button"
-            class="shrink-0 rounded-full px-5 py-2.5 text-xs font-semibold transition-all duration-300 sm:text-sm"
-            :class="
-              activeFilter === filter
-                ? 'scale-105 bg-[#04308F] text-white shadow-md shadow-[#04308F]/20'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-            "
-            @click="activeFilter = filter"
-          >
-            {{ filter }}
-          </button>
         </div>
       </div>
     </section>
