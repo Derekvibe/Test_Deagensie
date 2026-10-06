@@ -58,6 +58,11 @@ const staticPageSeo: Record<string, PageSeo> = {
     description:
       'Register your venture for Growth Lab solutions or create your profile as a creative in our TaaS network.',
   },
+  '/waitlist': {
+    title: 'Join the Waitlist | Deagensie Early Access',
+    description:
+      'Join the Deagensie waitlist for early access to our Growth Lab, Talent-as-a-Service network, and AI-powered matching engine. Be first inside.',
+  },
   '/subscription': {
     title: 'Growth Subscriptions | Deagensie',
     description:

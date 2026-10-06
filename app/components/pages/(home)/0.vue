@@ -383,7 +383,8 @@ onBeforeUnmount(() => {
         <h1
           class="mx-auto max-w-[24ch] font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-5xl lg:text-6xl xl:text-7xl"
         >
-          Build What's Next. <br />Find Who's Next.
+          Build What's Next. <br />
+          <span class="text-[#04308F]"> Find Who's Next. </span>
         </h1>
         <p
           class="mx-auto max-w-3xl text-base leading-relaxed font-normal text-gray-600 sm:text-lg lg:text-xl"

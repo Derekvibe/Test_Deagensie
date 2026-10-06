@@ -16,6 +16,8 @@ const menuItems: { id: DesktopMenu; label: string; to: string }[] = [
   { id: 'resource', label: 'Resources', to: '/resource' },
 ];
 
+const directLinks: { label: string; to: string }[] = [{ label: 'Contact Us', to: '/contact' }];
+
 const cancelClose = () => {
   if (!closeTimer) return;
   clearTimeout(closeTimer);
@@ -85,9 +87,19 @@ onUnmounted(cancelClose);
           />
         </svg>
       </NuxtLink>
+      <NuxtLink
+        v-for="link in directLinks"
+        :key="link.to"
+        :to="link.to"
+        class="inline-flex items-center hover:underline"
+        @mouseenter="closeDesktopMenu"
+        @focus="closeDesktopMenu"
+      >
+        {{ link.label }}
+      </NuxtLink>
     </div>
     <NuxtLink
-      to="/contact"
+      to="/waitlist"
       class="text-foreground rounded-full bg-[#05DED5] px-4 py-2 text-sm font-semibold transition-transform hover:scale-105 xl:px-6 xl:py-3 xl:text-base"
       @focus="closeDesktopMenu"
     >
