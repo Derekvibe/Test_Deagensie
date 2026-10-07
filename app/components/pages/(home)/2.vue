@@ -206,12 +206,12 @@ import { Icon } from '@iconify/vue';
                 class="w-full max-w-sm space-y-4 rounded-2xl border border-gray-100 bg-white p-6 shadow-md"
               >
                 <div class="flex items-center justify-between">
-                  <span class="text-xs font-bold text-gray-500 uppercase">AI Talent Engine</span>
-                  <span
+                  <span class="text-xs font-bold text-gray-500 uppercase">Elite Force</span>
+                  <!-- <span
                     class="rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-bold text-[#04308F]"
                   >
                     AI Signal Live
-                  </span>
+                  </span> -->
                 </div>
                 <div class="space-y-3">
                   <div
@@ -222,8 +222,8 @@ import { Icon } from '@iconify/vue';
                       class="size-10 rounded-full object-cover"
                     />
                     <div>
-                      <p class="text-xs font-bold text-gray-900">Victor E.</p>
-                      <p class="text-[11px] text-gray-500">Product Designer • AI Match 99%</p>
+                      <p class="text-xs font-bold text-gray-900">Peter Bassey Okon.</p>
+                      <p class="text-[11px] text-gray-500">Brand Communication & Marketing Lead</p>
                     </div>
                   </div>
                   <div
@@ -234,8 +234,8 @@ import { Icon } from '@iconify/vue';
                       class="size-10 rounded-full object-cover"
                     />
                     <div>
-                      <p class="text-xs font-bold text-gray-900">Don O.</p>
-                      <p class="text-[11px] text-gray-500">Brand Strategist • AI Match 97%</p>
+                      <p class="text-xs font-bold text-gray-900">Gift Olungwe</p>
+                      <p class="text-[11px] text-gray-500">Product Designer</p>
                     </div>
                   </div>
                 </div>
