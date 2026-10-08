@@ -2,21 +2,18 @@
   <section class="bg-[#F6F6F6] py-12 lg:py-24">
     <div class="mx-auto w-5/6 max-w-7xl">
       <h2
-        class="text-center text-2xl leading-normal font-semibold lg:text-4xl xl:text-5xl xl:leading-normal"
+        class="font-prata text-center text-2xl leading-normal font-normal lg:text-4xl xl:text-5xl xl:leading-normal"
       >
         The Deagensie Difference: We combine <br />
         what others separate.
       </h2>
-      <p class="mt-4 text-center text-[#373737]">
+      <p class="font-open-sans mt-4 text-center text-[#373737]">
         Most agencies focus on aesthetics. Most accelerators focus on funding. Most talent platforms
-        focus on
-
-        <span class="hidden lg:inline">&nbsp;<br /></span>placement. Deagensie integrates all three
-        and goes further.
-        <span class="text-lg font-bold text-[#373737]"> Deagensie integrates all three.</span>
+        focus on placement.
+        <span class="font-bold text-[#04308F]"> Deagensie integrates all three.</span>
       </p>
       <ul
-        class="*:bg-background mt-15 space-y-6 *:rounded-md *:border-l *:border-[#04308F] *:p-6 lg:mt-20 lg:grid lg:grid-cols-3 lg:gap-6 lg:space-y-0 **:[h3]:mt-2.5 **:[h3]:mb-4 **:[h3]:text-xl **:[h3]:leading-normal **:[h3]:font-medium lg:**:[h3]:min-h-[2lh] xl:**:[h3]:min-h-0 **:[span]:text-2xl **:[span]:leading-tight **:[span]:font-semibold **:[span]:text-[#04308F]"
+        class="*:bg-background **:[h3]:font-prata **:[p]:font-open-sans **:[span]:font-prata mt-15 space-y-6 *:rounded-md *:border-l *:border-[#04308F] *:p-6 lg:mt-20 lg:grid lg:grid-cols-3 lg:gap-6 lg:space-y-0 **:[h3]:mt-2.5 **:[h3]:mb-4 **:[h3]:text-xl **:[h3]:leading-normal **:[h3]:font-normal lg:**:[h3]:min-h-[2lh] xl:**:[h3]:min-h-0 **:[span]:text-2xl **:[span]:leading-tight **:[span]:font-semibold **:[span]:text-[#04308F]"
       >
         <li>
           <span>01</span>

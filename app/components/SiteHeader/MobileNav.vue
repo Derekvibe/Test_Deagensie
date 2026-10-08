@@ -46,33 +46,35 @@ const open = defineModel<boolean>('open', { default: false });
                 </p>
               </div>
               <hr />
-              <div class="space-y-6">
-                <p class="text-sm leading-relaxed font-medium uppercase">Growth Layers</p>
+              <div class="space-y-4">
+                <p class="text-xs leading-relaxed font-semibold text-gray-400 uppercase">
+                  Quick Links
+                </p>
                 <ul
-                  class="space-y-4 **:[a]:inline-flex **:[a]:items-center **:[a]:gap-2 **:[a]:text-xs **:[a]:leading-normal **:[svg]:text-xl"
+                  class="space-y-3 **:[a]:inline-flex **:[a]:items-center **:[a]:gap-2 **:[a]:text-xs **:[a]:leading-normal **:[svg]:text-base"
                 >
                   <li>
                     <NuxtLink to="/business" class="hover:underline">
                       <Icon icon="hugeicons:arrow-right-01" />
-                      01 Strategy
+                      Brand Positioning & Strategy
                     </NuxtLink>
                   </li>
                   <li>
-                    <NuxtLink to="/business" class="hover:underline">
+                    <NuxtLink to="/portfolio" class="hover:underline">
                       <Icon icon="hugeicons:arrow-right-01" />
-                      02 Branding
+                      Client Case Studies
                     </NuxtLink>
                   </li>
                   <li>
-                    <NuxtLink to="/business" class="hover:underline">
+                    <NuxtLink to="/subscription" class="hover:underline">
                       <Icon icon="hugeicons:arrow-right-01" />
-                      03 Marketing
+                      Talent-as-a-Service
                     </NuxtLink>
                   </li>
                   <li>
-                    <NuxtLink to="/business" class="hover:underline">
+                    <NuxtLink to="/waitlist" class="hover:underline">
                       <Icon icon="hugeicons:arrow-right-01" />
-                      04 Digital Platforms
+                      Join Deagensie Waitlist
                     </NuxtLink>
                   </li>
                 </ul>
@@ -168,12 +170,6 @@ const open = defineModel<boolean>('open', { default: false });
           </AccordionItem>
         </Accordion>
         <div class="bg-background sticky bottom-0 z-50 mx-auto mt-auto w-5/6 space-y-3 pt-4 pb-12">
-          <NuxtLink
-            to="/contact"
-            class="flex w-full items-center justify-center gap-2 rounded-full border border-gray-200 bg-white p-3 text-center text-sm font-semibold text-gray-800 transition-all duration-200 hover:border-[#04308F] hover:text-[#04308F]"
-          >
-            Contact Us
-          </NuxtLink>
           <NuxtLink
             to="/waitlist"
             class="inline-block w-full rounded-full bg-[#05DED5] p-3 text-center font-semibold text-gray-950"

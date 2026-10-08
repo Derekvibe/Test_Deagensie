@@ -6,12 +6,12 @@ import { Icon } from '@iconify/vue';
   <section class="py-12 lg:py-24">
     <div class="mx-auto w-5/6 max-w-7xl">
       <h2
-        class="text-center text-2xl leading-normal font-semibold lg:text-4xl xl:text-5xl xl:leading-normal"
+        class="font-prata text-center text-2xl leading-normal font-normal lg:text-4xl xl:text-5xl xl:leading-normal"
       >
         What You Get Inside the Growth Lab
       </h2>
       <ul
-        class="**:[div]:text-background mt-10 space-y-6 *:rounded-[calc(var(--radius)+2px)] *:border *:border-[#8CA0CB] *:bg-[#FCFCFE] *:px-4 *:py-6 lg:mt-15 lg:grid lg:grid-cols-3 lg:gap-6 lg:space-y-0 **:[div]:grid **:[div]:size-10 **:[div]:place-items-center **:[div]:rounded-full **:[div]:bg-[#026662] **:[div]:text-2xl **:[h3]:mt-6 **:[h3]:mb-4 **:[h3]:text-2xl **:[h3]:leading-normal **:[h3]:font-semibold lg:**:[h3]:min-h-[2lh] xl:**:[h3]:min-h-0 *:**:[li]:flex *:**:[li]:items-center *:**:[li]:gap-2 *:**:[li]:py-3 **:[p]:py-3 *:**:[svg]:shrink-0 *:**:[svg]:text-2xl"
+        class="**:[div]:text-background **:[h3]:font-prata *:**:[li]:font-open-sans **:[p]:font-open-sans mt-10 space-y-6 *:rounded-[calc(var(--radius)+2px)] *:border *:border-[#8CA0CB] *:bg-[#FCFCFE] *:px-4 *:py-6 lg:mt-15 lg:grid lg:grid-cols-3 lg:gap-6 lg:space-y-0 **:[div]:grid **:[div]:size-10 **:[div]:place-items-center **:[div]:rounded-full **:[div]:bg-[#026662] **:[div]:text-2xl **:[h3]:mt-6 **:[h3]:mb-4 **:[h3]:text-2xl **:[h3]:leading-normal **:[h3]:font-normal lg:**:[h3]:min-h-[2lh] xl:**:[h3]:min-h-0 *:**:[li]:flex *:**:[li]:items-center *:**:[li]:gap-2 *:**:[li]:py-3 **:[p]:py-3 *:**:[svg]:shrink-0 *:**:[svg]:text-2xl"
       >
         <li>
           <div>

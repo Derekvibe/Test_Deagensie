@@ -17,7 +17,9 @@ const brands = [
 <template>
   <section class="space-y-10 py-10 lg:space-y-12 lg:py-18">
     <!-- Heading -->
-    <h2 class="mx-auto w-full max-w-3xl text-center text-2xl leading-tight font-medium lg:text-3xl">
+    <h2
+      class="mx-auto w-full max-w-3xl text-center font-serif text-2xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl 2xl:text-6xl"
+    >
       Forward-thinking brands trust Deagensie
     </h2>
 

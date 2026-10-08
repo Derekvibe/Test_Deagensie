@@ -8,20 +8,22 @@
           Why Deagensie
         </span>
         <h1
-          class="font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-6xl"
+          class="font-prata text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-6xl"
         >
           We are not just service providers; <br class="hidden lg:inline" />we are bridge builders
         </h1>
-        <p class="text-base leading-relaxed font-normal text-gray-500 sm:text-lg lg:text-xl">
+        <p
+          class="font-open-sans text-base leading-relaxed font-normal text-gray-500 sm:text-lg lg:text-xl"
+        >
           We are the bridge between creative talent and businesses, ensuring that startups scale
           faster and creatives thrive without borders.
         </p>
         <div class="pt-4">
           <NuxtLink
-            to="/contact"
+            to="/waitlist"
             class="inline-flex items-center gap-2 rounded-full bg-[#04308F] px-8 py-4 text-base font-semibold text-white shadow-md shadow-[#04308F]/20 transition-all duration-300 hover:scale-105 hover:bg-[#05DED5] hover:text-gray-900"
           >
-            Schedule a Consultation
+            Get Started with Deagensie
           </NuxtLink>
         </div>
       </div>

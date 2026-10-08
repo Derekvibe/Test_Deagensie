@@ -67,9 +67,9 @@ section {
     > div {
       @apply space-y-4 lg:space-y-6;
       h2 {
-        @apply text-center text-2xl leading-normal font-semibold lg:text-4xl xl:text-5xl xl:leading-normal;
+        @apply font-prata text-center text-2xl leading-normal font-normal lg:text-4xl xl:text-5xl xl:leading-normal;
         + p {
-          @apply text-center;
+          @apply font-open-sans text-center;
         }
       }
       > div {
@@ -81,7 +81,7 @@ section {
         div {
           @apply lg:flex-1;
           h3 {
-            @apply text-xl font-semibold xl:text-3xl;
+            @apply font-prata text-xl font-normal xl:text-3xl;
             + p {
               @apply mt-4 mb-6;
             }

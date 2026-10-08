@@ -106,10 +106,8 @@ import { Icon } from '@iconify/vue';
               <div
                 class="absolute bottom-6 left-6 space-y-1 rounded-2xl border border-white/40 bg-white/95 px-4 py-3 text-gray-900 shadow-xl backdrop-blur-md"
               >
-                <p class="text-sm font-bold text-gray-900">Peter Bassey Okon</p>
-                <p class="text-xs font-semibold text-[#04308F]">
-                  Brand Cmmunication and marketing Lead
-                </p>
+                <p class="text-sm font-bold text-gray-900">Blossom Adaku Obiorah</p>
+                <p class="text-xs font-semibold text-[#04308F]">Executive Assistant</p>
                 <div class="flex items-center gap-1.5 pt-1 text-[11px] font-medium text-gray-500">
                   <Icon icon="simple-icons:github" class="text-xs text-black" />
                   <span>Verified TaaS Talent • Deagensie Ecosystem</span>

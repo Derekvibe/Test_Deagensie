@@ -115,15 +115,15 @@ async function handleSubmit() {
     <section class="border-b border-gray-100 bg-gray-50 py-8">
       <div class="mx-auto grid w-5/6 max-w-4xl grid-cols-3 divide-x divide-gray-200 text-center">
         <div class="px-4 py-2">
-          <p class="font-serif text-2xl font-normal text-gray-900 sm:text-3xl">5,000+</p>
+          <p class="font-open-sans text-2xl font-bold text-gray-900 sm:text-3xl">5,000+</p>
           <p class="mt-1 text-xs text-gray-500 sm:text-sm">Global Creatives</p>
         </div>
         <div class="px-4 py-2">
-          <p class="font-serif text-2xl font-normal text-gray-900 sm:text-3xl">100+</p>
+          <p class="font-open-sans text-2xl font-bold text-gray-900 sm:text-3xl">100+</p>
           <p class="mt-1 text-xs text-gray-500 sm:text-sm">Solutions Delivered</p>
         </div>
         <div class="px-4 py-2">
-          <p class="font-serif text-2xl font-normal text-gray-900 sm:text-3xl">30%</p>
+          <p class="font-open-sans text-2xl font-bold text-gray-900 sm:text-3xl">30%</p>
           <p class="mt-1 text-xs text-gray-500 sm:text-sm">Faster Growth</p>
         </div>
       </div>

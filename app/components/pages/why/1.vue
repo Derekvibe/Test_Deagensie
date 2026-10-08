@@ -7,12 +7,12 @@ import { Icon } from '@iconify/vue';
     <div class="mx-auto w-5/6 max-w-7xl space-y-16">
       <div v-reveal="'fade-up'" class="mx-auto max-w-3xl space-y-4 text-center">
         <h2
-          class="font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
+          class="font-prata text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
         >
           Most agencies create visuals and run campaigns. <br class="hidden lg:inline" />Deagensie
           goes deeper.
         </h2>
-        <p class="text-base leading-relaxed font-normal text-gray-500 lg:text-lg">
+        <p class="font-open-sans text-base leading-relaxed font-normal text-gray-500 lg:text-lg">
           We fuse AI-driven intelligence, African creative excellence, and founder-focused growth
           systems to build brands that don&apos;t just look good; they evolve, adapt, and scale.
         </p>
@@ -24,13 +24,14 @@ import { Icon } from '@iconify/vue';
         class="space-y-10 rounded-3xl border border-gray-100 bg-white p-8 shadow-md lg:p-12"
       >
         <div class="max-w-2xl space-y-3">
-          <span class="text-xs font-semibold tracking-widest text-[#04308F] uppercase"
+          <span
+            class="font-open-sans text-xs font-semibold tracking-widest text-[#04308F] uppercase"
             >Core Differentiator</span
           >
-          <h3 class="font-serif text-2xl font-normal text-gray-900">
+          <h3 class="font-prata text-2xl font-normal text-gray-900">
             AI-Driven Branding & Marketing Intelligence
           </h3>
-          <p class="text-sm leading-relaxed font-normal text-gray-500">
+          <p class="font-open-sans text-sm leading-relaxed font-normal text-gray-500">
             In today&apos;s fast-moving digital economy, intuition alone is not enough. We embed
             Artificial Intelligence at the core of our branding and marketing systems.
           </p>
@@ -39,8 +40,8 @@ import { Icon } from '@iconify/vue';
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
           <!-- Traditional Agencies -->
           <div class="space-y-4 rounded-2xl border border-gray-100 bg-gray-50 p-6">
-            <h4 class="font-serif text-lg font-normal text-gray-700">Most Agencies</h4>
-            <ul class="space-y-3 text-sm font-normal text-gray-600">
+            <h4 class="font-prata text-lg font-normal text-gray-700">Most Agencies</h4>
+            <ul class="font-open-sans space-y-3 text-sm font-normal text-gray-600">
               <li class="flex items-center gap-3">
                 <Icon icon="hugeicons:cancel-circle" class="shrink-0 text-lg text-red-500" />
                 <span>Create basic visuals</span>
@@ -62,7 +63,7 @@ import { Icon } from '@iconify/vue';
 
           <!-- Deagensie -->
           <div class="space-y-4 rounded-2xl border border-[#04308F]/20 bg-[#04308F]/5 p-6">
-            <h4 class="font-serif text-lg font-normal text-[#04308F]">Deagensie</h4>
+            <h4 class="font-prata text-lg font-normal text-[#04308F]">Deagensie</h4>
             <ul class="space-y-3 text-sm font-medium text-gray-800">
               <li class="flex items-center gap-3">
                 <Icon icon="hugeicons:tick-02" class="shrink-0 text-lg font-bold text-[#05DED5]" />

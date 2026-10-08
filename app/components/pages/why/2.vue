@@ -5,11 +5,13 @@ import { Icon } from '@iconify/vue';
 <template>
   <section class="bg-[#FCFCFE] py-15 lg:py-24">
     <div class="mx-auto w-5/6 max-w-7xl space-y-10 lg:space-y-12">
-      <h2 class="text-center text-2xl leading-normal font-semibold lg:text-5xl lg:leading-normal">
+      <h2
+        class="font-prata text-center text-2xl leading-normal font-normal lg:text-5xl lg:leading-normal"
+      >
         Our AI Capabilities Include
       </h2>
       <ul
-        class="*:bg-background **:[div]:text-background space-y-6 *:rounded-[calc(var(--radius)+2px)] *:border *:border-[#E2E2E2] *:px-5 *:py-4 lg:grid lg:grid-cols-3 lg:gap-6 lg:space-y-0 **:[div]:box-content **:[div]:grid **:[div]:size-12 **:[div]:place-items-center **:[div]:rounded-full **:[div]:border **:[div]:bg-(--bg-color) **:[div]:text-3xl **:[h3]:mt-5 **:[h3]:mb-4 **:[h3]:min-h-[2lh] **:[h3]:text-xl **:[h3]:leading-snug **:[h3]:font-medium xl:**:[h3]:min-h-0"
+        class="*:bg-background **:[div]:text-background **:[h3]:font-prata **:[p]:font-open-sans space-y-6 *:rounded-[calc(var(--radius)+2px)] *:border *:border-[#E2E2E2] *:px-5 *:py-4 lg:grid lg:grid-cols-3 lg:gap-6 lg:space-y-0 **:[div]:box-content **:[div]:grid **:[div]:size-12 **:[div]:place-items-center **:[div]:rounded-full **:[div]:border **:[div]:bg-(--bg-color) **:[div]:text-3xl **:[h3]:mt-5 **:[h3]:mb-4 **:[h3]:min-h-[2lh] **:[h3]:text-xl **:[h3]:leading-snug **:[h3]:font-normal xl:**:[h3]:min-h-0"
       >
         <li>
           <div style="--bg-color: #026662">

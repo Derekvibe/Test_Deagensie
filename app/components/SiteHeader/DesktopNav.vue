@@ -16,7 +16,7 @@ const menuItems: { id: DesktopMenu; label: string; to: string }[] = [
   { id: 'resource', label: 'Resources', to: '/resource' },
 ];
 
-const directLinks: { label: string; to: string }[] = [{ label: 'Contact Us', to: '/contact' }];
+const directLinks: { label: string; to: string }[] = [];
 
 const cancelClose = () => {
   if (!closeTimer) return;
@@ -135,234 +135,390 @@ onUnmounted(cancelClose);
   >
     <div
       v-if="activeDesktopMenu === 'business'"
-      class="flex aspect-910/500 w-[calc(910/1440*100vw)] max-w-[910px] rounded-[inherit]"
+      class="flex aspect-880/420 w-[calc(880/1440*100vw)] max-w-[880px] gap-8 rounded-[inherit] p-8"
     >
-      <div class="flex flex-1 gap-10 p-10">
-        <div class="space-y-6">
-          <div class="space-y-6">
-            <p class="text-2xl leading-normal font-semibold">
-              <NuxtLink to="/business" class="hover:underline">
-                Customized Solutions For Businesses
-              </NuxtLink>
-            </p>
-            <p>
-              The Future of Business Growth is Here. It&apos;s Bold, It&apos;s Intelligent,
-              It&apos;s Deagensie.
-            </p>
-          </div>
-          <hr />
-          <div class="space-y-4">
-            <p class="text-lg leading-snug font-medium">
-              <NuxtLink to="/creatives" class="hover:underline">Hire Creatives</NuxtLink>
-            </p>
-            <p class="linedblock text-sm leading-relaxed">
-              Match with top-tier African creative talent and build world-class teams.
-            </p>
-          </div>
+      <div class="flex flex-1 flex-col justify-between space-y-4">
+        <div class="space-y-3">
           <NuxtLink
             to="/business"
-            class="inline-block w-full rounded-full bg-[#05DED5] p-3 text-center font-medium"
+            class="group flex items-start gap-4 rounded-2xl p-3 transition-colors hover:bg-gray-100/70"
           >
-            Learn more
+            <div
+              class="flex size-11 shrink-0 items-center justify-center rounded-xl border border-gray-200/80 bg-gray-50 text-xl text-[#04308F] transition-colors group-hover:bg-[#04308F] group-hover:text-white"
+            >
+              <Icon icon="hugeicons:target-02" />
+            </div>
+            <div>
+              <p class="text-base font-semibold text-gray-950 group-hover:text-[#04308F]">
+                Brand Positioning & Strategy
+              </p>
+              <p class="mt-0.5 text-xs leading-relaxed text-gray-500">
+                Build investor-grade positioning, narrative & market identity for your venture.
+              </p>
+            </div>
+          </NuxtLink>
+
+          <NuxtLink
+            to="/business"
+            class="group flex items-start gap-4 rounded-2xl p-3 transition-colors hover:bg-gray-100/70"
+          >
+            <div
+              class="flex size-11 shrink-0 items-center justify-center rounded-xl border border-gray-200/80 bg-gray-50 text-xl text-[#04308F] transition-colors group-hover:bg-[#04308F] group-hover:text-white"
+            >
+              <Icon icon="hugeicons:cpu" />
+            </div>
+            <div>
+              <p class="text-base font-semibold text-gray-950 group-hover:text-[#04308F]">
+                Growth Engineering & AI
+              </p>
+              <p class="mt-0.5 text-xs leading-relaxed text-gray-500">
+                Predictive marketing intelligence, scalable acquisition systems & growth roadmaps.
+              </p>
+            </div>
+          </NuxtLink>
+
+          <NuxtLink
+            to="/subscription"
+            class="group flex items-start gap-4 rounded-2xl p-3 transition-colors hover:bg-gray-100/70"
+          >
+            <div
+              class="flex size-11 shrink-0 items-center justify-center rounded-xl border border-gray-200/80 bg-gray-50 text-xl text-[#04308F] transition-colors group-hover:bg-[#04308F] group-hover:text-white"
+            >
+              <Icon icon="hugeicons:user-group" />
+            </div>
+            <div>
+              <p class="text-base font-semibold text-gray-950 group-hover:text-[#04308F]">
+                On-Demand Creative Squads
+              </p>
+              <p class="mt-0.5 text-xs leading-relaxed text-gray-500">
+                Deploy dedicated African creative teams & growth experts on flexible plans.
+              </p>
+            </div>
           </NuxtLink>
         </div>
-        <div class="space-y-6">
-          <div class="space-y-4">
-            <p class="text-lg leading-snug font-medium">
-              <NuxtLink to="/business" class="hover:underline">Business Growth</NuxtLink>
-            </p>
-            <p class="linedblock text-sm leading-relaxed">
-              Explore our premium business growth solutions tailored for startups and category
-              disruptors.
-            </p>
-          </div>
-          <div class="space-y-4">
-            <p class="text-lg leading-snug font-medium">
-              <NuxtLink to="/creatives" class="hover:underline">Train Creative Team</NuxtLink>
-            </p>
-            <p class="linedblock text-sm leading-relaxed">
-              Build a forward thinking creative team that brings magic into your business.
-            </p>
-          </div>
+
+        <div class="pt-1">
+          <NuxtLink
+            to="/business"
+            class="inline-flex items-center gap-2 text-sm font-semibold text-[#04308F] hover:underline"
+          >
+            Explore all venture solutions
+            <Icon icon="hugeicons:arrow-right-02" class="text-base" />
+          </NuxtLink>
         </div>
       </div>
-      <div class="text-background w-256/910 space-y-6 rounded-r-[inherit] bg-[#04308F] p-10">
-        <p class="text-lg leading-snug font-medium">Business Growth</p>
-        <ul
-          class="space-y-4 **:[a]:inline-flex **:[a]:items-center **:[a]:gap-2 **:[a]:text-sm **:[a]:leading-relaxed **:[svg]:text-xl"
-        >
-          <li>
-            <NuxtLink to="/business" class="hover:underline">
-              <Icon icon="hugeicons:arrow-right-01" />
-              Strategy
-            </NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/business" class="hover:underline">
-              <Icon icon="hugeicons:arrow-right-01" />
-              Brand Development
-            </NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/business" class="hover:underline">
-              <Icon icon="hugeicons:arrow-right-01" />
-              Marketing
-            </NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/business" class="hover:underline">
-              <Icon icon="hugeicons:arrow-right-01" />
-              Digital Products
-            </NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/subscription" class="hover:underline">
-              <Icon icon="hugeicons:arrow-right-01" />
-              Talent-as-a-Service
-            </NuxtLink>
-          </li>
-        </ul>
+
+      <div
+        class="relative flex w-[320px] shrink-0 flex-col justify-between overflow-hidden rounded-3xl bg-[#04308F] p-7 text-white"
+      >
+        <div class="space-y-3">
+          <p class="text-xl leading-tight font-bold">Build a Scalable Brand</p>
+          <NuxtLink
+            to="/waitlist"
+            class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#05DED5] hover:underline"
+          >
+            Enter Deagensie Waitlist
+            <Icon icon="hugeicons:arrow-right-02" class="text-base" />
+          </NuxtLink>
+        </div>
+        <div class="mt-4 overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-2">
+          <NuxtImg
+            src="/images/pages/(home)/hero.webp"
+            class="aspect-16/10 w-full rounded-xl object-cover"
+          />
+        </div>
       </div>
     </div>
 
     <div
       v-else-if="activeDesktopMenu === 'creatives'"
-      class="flex aspect-722/336 w-[calc(722/1440*100vw)] max-w-[722px] gap-10 rounded-[inherit] p-10"
+      class="flex aspect-880/420 w-[calc(880/1440*100vw)] max-w-[880px] gap-8 rounded-[inherit] p-8"
     >
-      <div class="w-[calc(291/763*100%+calc(var(--spacing)*10))] shrink-0 space-y-6">
-        <p class="text-2xl leading-normal font-semibold">
-          <NuxtLink to="/creatives" class="hover:underline">Why Join Deagensie?</NuxtLink>
-        </p>
-        <p>
-          African creatives can now find fulfilling careers while staying connected to their roots.
-        </p>
-      </div>
-      <div class="space-y-6">
-        <div class="space-y-4">
-          <p class="text-lg leading-snug font-medium">
-            <NuxtLink to="/creatives" class="hover:underline">Find Opportunities</NuxtLink>
-          </p>
-          <p class="linedblock text-sm leading-relaxed">
-            Create a portfolio and get matched with a global job opportunity.
-          </p>
+      <div class="flex flex-1 flex-col justify-between space-y-4">
+        <div class="space-y-3">
+          <NuxtLink
+            to="/creatives"
+            class="group flex items-start gap-4 rounded-2xl p-3 transition-colors hover:bg-gray-100/70"
+          >
+            <div
+              class="flex size-11 shrink-0 items-center justify-center rounded-xl border border-gray-200/80 bg-gray-50 text-xl text-[#026662] transition-colors group-hover:bg-[#026662] group-hover:text-white"
+            >
+              <Icon icon="hugeicons:user-spark-01" />
+            </div>
+            <div>
+              <p class="text-base font-semibold text-gray-950 group-hover:text-[#026662]">
+                Talent-as-a-Service (TaaS)
+              </p>
+              <p class="mt-0.5 text-xs leading-relaxed text-gray-500">
+                Predictive AI talent matching engine connecting African talent to global roles.
+              </p>
+            </div>
+          </NuxtLink>
+
+          <NuxtLink
+            to="/creatives"
+            class="group flex items-start gap-4 rounded-2xl p-3 transition-colors hover:bg-gray-100/70"
+          >
+            <div
+              class="flex size-11 shrink-0 items-center justify-center rounded-xl border border-gray-200/80 bg-gray-50 text-xl text-[#026662] transition-colors group-hover:bg-[#026662] group-hover:text-white"
+            >
+              <Icon icon="hugeicons:paint-brush-01" />
+            </div>
+            <div>
+              <p class="text-base font-semibold text-gray-950 group-hover:text-[#026662]">
+                For Creatives & Designers
+              </p>
+              <p class="mt-0.5 text-xs leading-relaxed text-gray-500">
+                Build your talent profile, earn competitive global income & remain rooted in Africa.
+              </p>
+            </div>
+          </NuxtLink>
+
+          <NuxtLink
+            to="/register"
+            class="group flex items-start gap-4 rounded-2xl p-3 transition-colors hover:bg-gray-100/70"
+          >
+            <div
+              class="flex size-11 shrink-0 items-center justify-center rounded-xl border border-gray-200/80 bg-gray-50 text-xl text-[#026662] transition-colors group-hover:bg-[#026662] group-hover:text-white"
+            >
+              <Icon icon="hugeicons:community" />
+            </div>
+            <div>
+              <p class="text-base font-semibold text-gray-950 group-hover:text-[#026662]">
+                Join Creative Community
+              </p>
+              <p class="mt-0.5 text-xs leading-relaxed text-gray-500">
+                Network of emerging young leaders, innovators & top creative minds across the
+                continent.
+              </p>
+            </div>
+          </NuxtLink>
         </div>
-        <div class="space-y-4">
-          <p class="text-lg leading-snug font-medium">
-            <NuxtLink to="/contact" class="hover:underline">Join Our Community</NuxtLink>
-          </p>
-          <p class="linedblock text-sm leading-relaxed">
-            Become a member of our emerging young leaders network dedicated to nurturing creative
-            talent.
-          </p>
+
+        <div class="pt-1">
+          <NuxtLink
+            to="/creatives"
+            class="inline-flex items-center gap-2 text-sm font-semibold text-[#026662] hover:underline"
+          >
+            Learn about our creative talent
+            <Icon icon="hugeicons:arrow-right-02" class="text-base" />
+          </NuxtLink>
+        </div>
+      </div>
+
+      <div
+        class="relative flex w-[320px] shrink-0 flex-col justify-between overflow-hidden rounded-3xl border border-[#05DED5]/30 bg-[#E6FEFD] p-7 text-gray-950"
+      >
+        <div class="space-y-3">
+          <p class="text-xl leading-tight font-bold">Hire Top 1% African Creatives</p>
+          <NuxtLink
+            to="/subscription"
+            class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#04308F] hover:underline"
+          >
+            Explore Talent Subscriptions
+            <Icon icon="hugeicons:arrow-right-02" class="text-base" />
+          </NuxtLink>
+        </div>
+        <div class="mt-4 overflow-hidden rounded-2xl border border-gray-200/80 bg-white p-2">
+          <NuxtImg
+            src="/images/pages/why/hero-4.png"
+            class="aspect-16/10 w-full rounded-xl object-cover"
+          />
         </div>
       </div>
     </div>
 
     <div
-      v-else-if="activeDesktopMenu === 'why'"
-      class="flex aspect-763/500 w-[calc(763/1440*100vw)] max-w-[763px] gap-10 rounded-[inherit] p-10"
+      v-if="activeDesktopMenu === 'why'"
+      class="flex aspect-880/420 w-[calc(880/1440*100vw)] max-w-[880px] gap-8 rounded-[inherit] p-8"
     >
-      <div class="w-[calc(291/763*100%+calc(var(--spacing)*10))] shrink-0 space-y-6">
-        <div>
-          <p class="text-2xl leading-normal font-semibold">
-            <NuxtLink to="/why" class="hover:underline">Why Deagensie</NuxtLink>
-          </p>
-          <p class="mt-6 mb-4">
-            Deagensie isn&apos;t just an agency. It&apos;s a growth engine, a predictive
-            intelligence platform, and a business accelerator in one.
-          </p>
+      <div class="flex flex-1 flex-col justify-between space-y-4">
+        <div class="space-y-3">
           <NuxtLink
             to="/why"
-            class="inline-flex items-center gap-2 px-4 py-2.5 font-semibold text-[#04308F] hover:underline"
+            class="group flex items-start gap-4 rounded-2xl p-3 transition-colors hover:bg-gray-100/70"
           >
-            Learn more
-            <Icon icon="hugeicons:arrow-right-02" class="text-xl" />
+            <div
+              class="flex size-11 shrink-0 items-center justify-center rounded-xl border border-gray-200/80 bg-gray-50 text-xl text-[#04308F] transition-colors group-hover:bg-[#04308F] group-hover:text-white"
+            >
+              <Icon icon="hugeicons:zap" />
+            </div>
+            <div>
+              <p class="text-base font-semibold text-gray-950 group-hover:text-[#04308F]">
+                The Deagensie Difference
+              </p>
+              <p class="mt-0.5 text-xs leading-relaxed text-gray-500">
+                Strategy + Brand + Market + Technology + Talent integrated into one ecosystem.
+              </p>
+            </div>
+          </NuxtLink>
+
+          <NuxtLink
+            to="/why"
+            class="group flex items-start gap-4 rounded-2xl p-3 transition-colors hover:bg-gray-100/70"
+          >
+            <div
+              class="flex size-11 shrink-0 items-center justify-center rounded-xl border border-gray-200/80 bg-gray-50 text-xl text-[#04308F] transition-colors group-hover:bg-[#04308F] group-hover:text-white"
+            >
+              <Icon icon="hugeicons:rocket" />
+            </div>
+            <div>
+              <p class="text-base font-semibold text-gray-950 group-hover:text-[#04308F]">
+                Founders' Growth Lab
+              </p>
+              <p class="mt-0.5 text-xs leading-relaxed text-gray-500">
+                Where early-stage startups and scaling companies become category leaders.
+              </p>
+            </div>
+          </NuxtLink>
+
+          <NuxtLink
+            to="/why"
+            class="group flex items-start gap-4 rounded-2xl p-3 transition-colors hover:bg-gray-100/70"
+          >
+            <div
+              class="flex size-11 shrink-0 items-center justify-center rounded-xl border border-gray-200/80 bg-gray-50 text-xl text-[#04308F] transition-colors group-hover:bg-[#04308F] group-hover:text-white"
+            >
+              <Icon icon="hugeicons:globe-02" />
+            </div>
+            <div>
+              <p class="text-base font-semibold text-gray-950 group-hover:text-[#04308F]">
+                African Excellence, Global Scale
+              </p>
+              <p class="mt-0.5 text-xs leading-relaxed text-gray-500">
+                Building world-class brands from the continent competing on a global stage.
+              </p>
+            </div>
           </NuxtLink>
         </div>
-        <NuxtImg
-          src="/images/pages/(home)/hero.webp"
-          class="aspect-291/178 rounded-md object-cover"
-        />
+
+        <div class="pt-1">
+          <NuxtLink
+            to="/why"
+            class="inline-flex items-center gap-2 text-sm font-semibold text-[#04308F] hover:underline"
+          >
+            Discover the Deagensie Ecosystem
+            <Icon icon="hugeicons:arrow-right-02" class="text-base" />
+          </NuxtLink>
+        </div>
       </div>
-      <div class="flex-1 space-y-6">
-        <div class="space-y-4">
-          <p class="text-lg leading-snug font-medium">
-            <NuxtLink to="/business" class="hover:underline"
-              >On-Demand Business Growth Team</NuxtLink
-            >
-          </p>
-          <p class="linedblock text-sm leading-relaxed">
-            Hire an on-demand squad of top-tier strategists, designers, and growth hackers.
-          </p>
+
+      <div
+        class="relative flex w-[320px] shrink-0 flex-col justify-between overflow-hidden rounded-3xl bg-[#04308F] p-7 text-white"
+      >
+        <div class="space-y-3">
+          <p class="text-xl leading-tight font-bold">See Our Brand Transformations</p>
+          <NuxtLink
+            to="/portfolio"
+            class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#05DED5] hover:underline"
+          >
+            View Selected Work
+            <Icon icon="hugeicons:arrow-right-02" class="text-base" />
+          </NuxtLink>
         </div>
-        <div class="space-y-4">
-          <p class="text-lg leading-snug font-medium">
-            <NuxtLink to="/creatives" class="hover:underline">Creatives Experience</NuxtLink>
-          </p>
-          <p class="linedblock text-sm leading-relaxed">
-            African creatives can now find fulfilling careers while staying connected to their
-            roots.
-          </p>
-        </div>
-        <div class="space-y-4">
-          <p class="text-lg leading-snug font-medium">
-            <NuxtLink to="/why" class="hover:underline">
-              AI-Driven Branding & Marketing Intelligence
-            </NuxtLink>
-          </p>
-          <p class="linedblock text-sm leading-relaxed">
-            Most agencies create stunning visuals and run ads, but Deagensie goes deeper.
-          </p>
+        <div class="mt-4 overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-2">
+          <NuxtImg
+            src="/images/pages/why/hero-2.png"
+            class="aspect-16/10 w-full rounded-xl object-cover"
+          />
         </div>
       </div>
     </div>
 
     <div
       v-else-if="activeDesktopMenu === 'about'"
-      class="flex aspect-1023/336 w-[calc(1023/1440*100vw)] max-w-[1023px] rounded-[inherit]"
+      class="flex aspect-880/420 w-[calc(880/1440*100vw)] max-w-[880px] gap-8 rounded-[inherit] p-8"
     >
-      <div class="w-[calc(291/1023*100%+calc(var(--spacing)*10))] shrink-0 space-y-6 p-10">
-        <div class="space-y-6">
-          <p class="text-2xl leading-normal font-semibold">
-            <NuxtLink to="/about">About Deagensie</NuxtLink>
-          </p>
-          <p>Redefining Talent & Business Growth in Africa Creative Economy</p>
+      <div class="flex flex-1 flex-col justify-between space-y-4">
+        <div class="space-y-3">
+          <NuxtLink
+            to="/about"
+            class="group flex items-start gap-4 rounded-2xl p-3 transition-colors hover:bg-gray-100/70"
+          >
+            <div
+              class="flex size-11 shrink-0 items-center justify-center rounded-xl border border-gray-200/80 bg-gray-50 text-xl text-[#04308F] transition-colors group-hover:bg-[#04308F] group-hover:text-white"
+            >
+              <Icon icon="hugeicons:user-id-verification" />
+            </div>
+            <div>
+              <p class="text-base font-semibold text-gray-950 group-hover:text-[#04308F]">
+                Who We Are
+              </p>
+              <p class="mt-0.5 text-xs leading-relaxed text-gray-500">
+                AI-led, ecosystem-driven growth and talent platform at the intersection of
+                creativity and technology.
+              </p>
+            </div>
+          </NuxtLink>
+
+          <NuxtLink
+            to="/portfolio"
+            class="group flex items-start gap-4 rounded-2xl p-3 transition-colors hover:bg-gray-100/70"
+          >
+            <div
+              class="flex size-11 shrink-0 items-center justify-center rounded-xl border border-gray-200/80 bg-gray-50 text-xl text-[#04308F] transition-colors group-hover:bg-[#04308F] group-hover:text-white"
+            >
+              <Icon icon="hugeicons:portfolio-briefcase" />
+            </div>
+            <div>
+              <p class="text-base font-semibold text-gray-950 group-hover:text-[#04308F]">
+                Our Portfolio
+              </p>
+              <p class="mt-0.5 text-xs leading-relaxed text-gray-500">
+                Explore brand transformations, case studies and creative work we have delivered.
+              </p>
+            </div>
+          </NuxtLink>
+
+          <NuxtLink
+            to="/contact"
+            class="group flex items-start gap-4 rounded-2xl p-3 transition-colors hover:bg-gray-100/70"
+          >
+            <div
+              class="flex size-11 shrink-0 items-center justify-center rounded-xl border border-gray-200/80 bg-gray-50 text-xl text-[#04308F] transition-colors group-hover:bg-[#04308F] group-hover:text-white"
+            >
+              <Icon icon="hugeicons:mail-01" />
+            </div>
+            <div>
+              <p class="text-base font-semibold text-gray-950 group-hover:text-[#04308F]">
+                Contact Us
+              </p>
+              <p class="mt-0.5 text-xs leading-relaxed text-gray-500">
+                Reach our team for partnerships, custom solutions or enterprise enquiries.
+              </p>
+            </div>
+          </NuxtLink>
         </div>
-        <NuxtImg
-          src="/images/pages/(home)/hero.webp"
-          class="aspect-276/118 w-276/291 rounded-[calc(var(--radius)+2px)] object-cover"
-        />
+
+        <div class="pt-1">
+          <NuxtLink
+            to="/about"
+            class="inline-flex items-center gap-2 text-sm font-semibold text-[#04308F] hover:underline"
+          >
+            Learn about Deagensie
+            <Icon icon="hugeicons:arrow-right-02" class="text-base" />
+          </NuxtLink>
+        </div>
       </div>
-      <div class="grid flex-1 grid-cols-2 gap-6 p-10">
-        <div class="space-y-4">
-          <p class="text-lg leading-snug font-medium">
-            <NuxtLink to="/about" class="hover:underline"> Who We Are </NuxtLink>
-          </p>
-          <p class="linedblock text-sm leading-relaxed">
-            Creative agency building Strategies, Identities, Platforms & Campaigns.
-          </p>
+
+      <div
+        class="relative flex w-[320px] shrink-0 flex-col justify-between overflow-hidden rounded-3xl bg-[#04308F] p-7 text-white"
+      >
+        <div class="space-y-3">
+          <p class="text-xl leading-tight font-bold">Built on Integrity. Driven by Impact.</p>
+          <NuxtLink
+            to="/waitlist"
+            class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#05DED5] hover:underline"
+          >
+            Join the Ecosystem
+            <Icon icon="hugeicons:arrow-right-02" class="text-base" />
+          </NuxtLink>
         </div>
-        <div class="space-y-4">
-          <p class="text-lg leading-snug font-medium">
-            <NuxtLink to="/portfolio" class="hover:underline">Our Portfolio</NuxtLink>
-          </p>
-          <p class="linedblock text-sm leading-relaxed">
-            We craft experiences that captivate, connect and convert.
-          </p>
-        </div>
-        <div class="space-y-4">
-          <p class="text-lg leading-snug font-medium">
-            <NuxtLink to="/about" class="hover:underline"> Leadership </NuxtLink>
-          </p>
-          <p class="linedblock text-sm leading-relaxed">
-            Meet the formidable team leading Deagensie Digitals.
-          </p>
-        </div>
-        <div class="space-y-4">
-          <p class="text-lg leading-snug font-medium">
-            <NuxtLink to="/contact" class="hover:underline">Contact Us</NuxtLink>
-          </p>
-          <p class="linedblock text-sm leading-relaxed">Let us know how we can help.</p>
+        <div class="mt-4 overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-2">
+          <NuxtImg
+            src="/images/pages/about/who-we-are.webp"
+            class="aspect-16/10 w-full rounded-xl object-cover"
+          />
         </div>
       </div>
     </div>
@@ -423,40 +579,99 @@ onUnmounted(cancelClose);
 
     <div
       v-else-if="activeDesktopMenu === 'resource'"
-      class="flex aspect-681/336 w-[calc(681/1440*100vw)] max-w-[681px] gap-12.5 rounded-[inherit] p-10"
+      class="flex aspect-880/420 w-[calc(880/1440*100vw)] max-w-[880px] gap-8 rounded-[inherit] p-8"
     >
-      <div class="w-[calc(382/681*100%+calc(var(--spacing)*10))] shrink-0 space-y-6">
-        <p class="text-2xl leading-normal font-semibold">
-          <NuxtLink to="/resource" class="hover:underline">
-            Where Businesses Grow and Creatives Thrive
+      <div class="flex flex-1 flex-col justify-between space-y-4">
+        <div class="space-y-3">
+          <NuxtLink
+            to="/blog"
+            class="group flex items-start gap-4 rounded-2xl p-3 transition-colors hover:bg-gray-100/70"
+          >
+            <div
+              class="flex size-11 shrink-0 items-center justify-center rounded-xl border border-gray-200/80 bg-gray-50 text-xl text-[#026662] transition-colors group-hover:bg-[#026662] group-hover:text-white"
+            >
+              <Icon icon="hugeicons:quill-write-02" />
+            </div>
+            <div>
+              <p class="text-base font-semibold text-gray-950 group-hover:text-[#026662]">
+                Blog & Insights
+              </p>
+              <p class="mt-0.5 text-xs leading-relaxed text-gray-500">
+                Strategy deep-dives, growth lessons, and creative intelligence from our team.
+              </p>
+            </div>
           </NuxtLink>
-        </p>
-        <p>Empowering businesses and creatives with skills to innovate and succeed.</p>
+
+          <NuxtLink
+            to="/resource"
+            class="group flex items-start gap-4 rounded-2xl p-3 transition-colors hover:bg-gray-100/70"
+          >
+            <div
+              class="flex size-11 shrink-0 items-center justify-center rounded-xl border border-gray-200/80 bg-gray-50 text-xl text-[#026662] transition-colors group-hover:bg-[#026662] group-hover:text-white"
+            >
+              <Icon icon="hugeicons:book-open-02" />
+            </div>
+            <div>
+              <p class="text-base font-semibold text-gray-950 group-hover:text-[#026662]">
+                eBooks & Guides
+              </p>
+              <p class="mt-0.5 text-xs leading-relaxed text-gray-500">
+                Downloadable playbooks for founders, marketers, and creative professionals.
+              </p>
+            </div>
+          </NuxtLink>
+
+          <NuxtLink
+            to="/resource"
+            class="group flex items-start gap-4 rounded-2xl p-3 transition-colors hover:bg-gray-100/70"
+          >
+            <div
+              class="flex size-11 shrink-0 items-center justify-center rounded-xl border border-gray-200/80 bg-gray-50 text-xl text-[#026662] transition-colors group-hover:bg-[#026662] group-hover:text-white"
+            >
+              <Icon icon="hugeicons:chart-bar-line" />
+            </div>
+            <div>
+              <p class="text-base font-semibold text-gray-950 group-hover:text-[#026662]">
+                White Papers & Reports
+              </p>
+              <p class="mt-0.5 text-xs leading-relaxed text-gray-500">
+                Data-backed research on African creative economy, talent trends, and market
+                opportunities.
+              </p>
+            </div>
+          </NuxtLink>
+        </div>
+
+        <div class="pt-1">
+          <NuxtLink
+            to="/resource"
+            class="inline-flex items-center gap-2 text-sm font-semibold text-[#026662] hover:underline"
+          >
+            Browse all resources
+            <Icon icon="hugeicons:arrow-right-02" class="text-base" />
+          </NuxtLink>
+        </div>
       </div>
-      <div class="flex-1 space-y-6">
-        <p class="text-lg leading-snug font-medium uppercase">Resources</p>
-        <ul
-          class="space-y-6 **:[a]:inline-flex **:[a]:items-center **:[a]:gap-4 **:[a]:text-sm **:[a]:leading-relaxed **:[svg]:text-xl"
-        >
-          <li>
-            <NuxtLink to="/blog" class="hover:underline">
-              <Icon icon="hugeicons:arrow-right-01" />
-              Blog
-            </NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/resource" class="hover:underline">
-              <Icon icon="hugeicons:arrow-right-01" />
-              eBooks
-            </NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/resource" class="hover:underline">
-              <Icon icon="hugeicons:arrow-right-01" />
-              White Papers
-            </NuxtLink>
-          </li>
-        </ul>
+
+      <div
+        class="relative flex w-[320px] shrink-0 flex-col justify-between overflow-hidden rounded-3xl border border-[#05DED5]/30 bg-[#E6FEFD] p-7 text-gray-950"
+      >
+        <div class="space-y-3">
+          <p class="text-xl leading-tight font-bold">Grow Smarter with Intelligence</p>
+          <NuxtLink
+            to="/blog"
+            class="inline-flex items-center gap-1.5 text-sm font-semibold text-[#04308F] hover:underline"
+          >
+            Read Latest Insights
+            <Icon icon="hugeicons:arrow-right-02" class="text-base" />
+          </NuxtLink>
+        </div>
+        <div class="mt-4 overflow-hidden rounded-2xl border border-gray-200/80 bg-white p-2">
+          <NuxtImg
+            src="/images/pages/why/hero-4.png"
+            class="aspect-16/10 w-full rounded-xl object-cover"
+          />
+        </div>
       </div>
     </div>
   </div>

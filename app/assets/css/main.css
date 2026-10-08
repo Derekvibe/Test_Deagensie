@@ -133,10 +133,11 @@
 }
 
 .stat-value {
-  font-family: var(--font-prata);
-  font-size: clamp(2.25rem, 5vw, 4.25rem);
-  line-height: 0.95;
-  letter-spacing: -0.02em;
+  font-family: var(--font-open-sans);
+  font-weight: 700;
+  font-size: clamp(2.25rem, 4.5vw, 4rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
 }
 
 /* .dark {

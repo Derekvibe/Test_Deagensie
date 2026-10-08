@@ -375,11 +375,11 @@ onBeforeUnmount(() => {
     >
       <!-- Editorial Header Content — centred, max readable width -->
       <div v-reveal="'fade-up'" class="mx-auto max-w-4xl space-y-6 text-center">
-        <span
+        <!-- <span
           class="inline-block rounded-full bg-[#04308F]/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-[#04308F] uppercase"
         >
           Human layer powering your venture growth
-        </span>
+        </span> -->
         <h1
           class="mx-auto max-w-[24ch] font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-5xl lg:text-6xl xl:text-7xl"
         >
@@ -501,7 +501,7 @@ onBeforeUnmount(() => {
                 class="absolute top-5 left-5 z-20 rounded-2xl border border-gray-200 bg-white/95 px-4 py-2.5 text-gray-900 shadow-xl backdrop-blur-md transition-all duration-500"
               >
                 <div class="flex items-center gap-2">
-                  <span class="text-sm font-bold">Jennifer Author</span>
+                  <span class="text-sm font-bold">Jennifer Arthur</span>
                   <span
                     class="rounded-full bg-[#05DED5]/20 px-2.5 py-0.5 text-xs font-bold text-[#04308F]"
                     >100% Match</span
@@ -873,9 +873,9 @@ onBeforeUnmount(() => {
       >
         <NuxtLink
           to="/contact"
-          class="w-full rounded-full bg-[#020B1E] px-8 py-4 text-center text-base font-bold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:bg-[#04308F] sm:w-auto lg:text-lg"
+          class="w-full rounded-full bg-[#04308F] px-8 py-4 text-center text-base font-bold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:bg-[#04308F] sm:w-auto lg:text-lg"
         >
-          Start a New Venture
+          Start a Venture Project
         </NuxtLink>
         <NuxtLink
           to="/creatives"
@@ -895,7 +895,7 @@ onBeforeUnmount(() => {
           :ref="(el) => setStatRef(el, statIndex)"
           class="space-y-2 border-l-2 border-[#05DED5] pl-4 transition-all duration-300 hover:translate-x-1 lg:pl-6"
         >
-          <p class="font-prata stat-value text-[#04308F]">
+          <p class="stat-value text-[#04308F]">
             {{ formatStatValue(stat) }}
           </p>
           <p class="text-xs leading-relaxed text-gray-500 lg:text-sm">{{ stat.label }}</p>

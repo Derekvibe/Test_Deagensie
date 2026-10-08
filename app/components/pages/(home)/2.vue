@@ -213,29 +213,31 @@ import { Icon } from '@iconify/vue';
                     AI Signal Live
                   </span> -->
                 </div>
-                <div class="space-y-3">
+                <div class="space-y-3.5">
                   <div
-                    class="flex items-center gap-3 rounded-xl border border-gray-100 bg-gray-50 p-2"
+                    class="flex items-center gap-3.5 rounded-2xl border border-gray-100 bg-gray-50/90 p-3 transition-all duration-300 hover:bg-white hover:shadow-md sm:gap-4 sm:p-3.5"
                   >
                     <NuxtImg
-                      src="/images/pages/(home)/testimonials/victor-ephraim.png"
-                      class="size-10 rounded-full object-cover"
+                      src="/images/Peter.jpeg"
+                      class="size-14 shrink-0 rounded-2xl border border-gray-200/80 object-cover shadow-xs sm:size-16"
                     />
-                    <div>
-                      <p class="text-xs font-bold text-gray-900">Peter Bassey Okon.</p>
-                      <p class="text-[11px] text-gray-500">Brand Communication & Marketing Lead</p>
+                    <div class="space-y-0.5">
+                      <p class="text-sm font-bold text-gray-900 sm:text-base">Peter Bassey Okon.</p>
+                      <p class="text-xs font-medium text-gray-500 sm:text-sm">
+                        Brand Communication & Marketing Lead
+                      </p>
                     </div>
                   </div>
                   <div
-                    class="flex items-center gap-3 rounded-xl border border-gray-100 bg-gray-50 p-2"
+                    class="flex items-center gap-3.5 rounded-2xl border border-gray-100 bg-gray-50/90 p-3 transition-all duration-300 hover:bg-white hover:shadow-md sm:gap-4 sm:p-3.5"
                   >
                     <NuxtImg
-                      src="/images/pages/(home)/testimonials/don-okhufou.png"
-                      class="size-10 rounded-full object-cover"
+                      src="/images/gift.jpeg"
+                      class="size-14 shrink-0 rounded-2xl border border-gray-200/80 object-cover shadow-xs sm:size-16"
                     />
-                    <div>
-                      <p class="text-xs font-bold text-gray-900">Gift Olungwe</p>
-                      <p class="text-[11px] text-gray-500">Product Designer</p>
+                    <div class="space-y-0.5">
+                      <p class="text-sm font-bold text-gray-900 sm:text-base">Gift Olungwe</p>
+                      <p class="text-xs font-medium text-gray-500 sm:text-sm">Product Designer</p>
                     </div>
                   </div>
                 </div>
