@@ -18,7 +18,7 @@ const ceo: TeamMember = {
   group: 'leadership',
   bio: "Bright is a visionary entrepreneur and growth strategist passionate about bridging African creative talent with international enterprise opportunities. He steers Deagensie's strategic direction and global expansion with over a decade of expertise in digital innovation and business growth.",
   linkedin: 'https://linkedin.com/in/bright-okorafor',
-  twitter: 'https://x.com/brightokorafor',
+  // twitter: 'https://x.com/brightokorafor',
 };
 
 const ogs: TeamMember[] = [
@@ -29,7 +29,7 @@ const ogs: TeamMember[] = [
     group: 'ogs',
     bio: "Peter drives Deagensie's brand voice, communication strategy, and marketing operations. He crafts compelling narratives that connect the brand to its audience across every channel.",
     linkedin: 'https://linkedin.com',
-    twitter: 'https://x.com',
+    // twitter: 'https://x.com',
   },
   {
     name: 'Gift Olungwe',
@@ -38,7 +38,7 @@ const ogs: TeamMember[] = [
     group: 'ogs',
     bio: 'Gift combines aesthetic sensibility with user-centred thinking to craft interfaces and brand experiences that are both beautiful and functional.',
     linkedin: 'https://linkedin.com',
-    twitter: 'https://x.com',
+    // twitter: 'https://x.com',
   },
   {
     name: 'Jennifer Arthur',
@@ -47,7 +47,7 @@ const ogs: TeamMember[] = [
     group: 'ogs',
     bio: 'Jennifer ensures the people side of Deagensie runs smoothly, from talent onboarding to team culture. She is the connective tissue between strategy and human excellence.',
     linkedin: 'https://linkedin.com',
-    twitter: 'https://x.com',
+    // twitter: 'https://x.com',
   },
 ];
 
@@ -59,7 +59,7 @@ const techCreatives: TeamMember[] = [
     group: 'genz',
     bio: 'Godwin translates ideas into stunning visual identities, digital assets, and brand collateral that redefine how clients present themselves to the world.',
     linkedin: 'https://linkedin.com',
-    twitter: 'https://x.com',
+    // twitter: 'https://x.com',
   },
   {
     name: 'Okoro Emmanuel Nzube',
@@ -68,7 +68,7 @@ const techCreatives: TeamMember[] = [
     group: 'genz',
     bio: "Emmanuel architects and builds robust web platforms, APIs, and AI integrations that power Deagensie's digital product suite and client solutions.",
     linkedin: 'https://linkedin.com',
-    twitter: 'https://x.com',
+    // twitter: 'https://x.com',
   },
   {
     name: 'Blossom Adaku Obiorah',
@@ -77,7 +77,7 @@ const techCreatives: TeamMember[] = [
     group: 'genz',
     bio: 'Blossom keeps the leadership engine running at full speed with precision coordination, seamless scheduling, and sharp organisational intelligence.',
     linkedin: 'https://linkedin.com',
-    twitter: 'https://x.com',
+    // twitter: 'https://x.com',
   },
   {
     name: 'Vivian Etim',
@@ -86,7 +86,7 @@ const techCreatives: TeamMember[] = [
     group: 'genz',
     bio: 'Vivian supports brand storytelling, content creation, and marketing campaigns, bringing fresh creative energy to every audience touchpoint.',
     linkedin: 'https://linkedin.com',
-    twitter: 'https://x.com',
+    // twitter: 'https://x.com',
   },
 ];
 
@@ -153,14 +153,14 @@ const closeModal = () => {
               >
                 <Icon icon="ri:linkedin-fill" class="text-base" /> LinkedIn
               </a>
-              <a
+              <!-- <a
                 :href="ceo.twitter"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2.5 text-sm font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:bg-[#05DED5] hover:text-gray-900"
               >
                 <Icon icon="prime:twitter" class="text-base" /> X (Twitter)
-              </a>
+              </a> -->
             </div>
           </div>
 
@@ -256,7 +256,7 @@ const closeModal = () => {
                 >
                   <Icon icon="ri:linkedin-fill" />
                 </a>
-                <a
+                <!-- <a
                   v-if="member.twitter"
                   :href="member.twitter"
                   target="_blank"
@@ -264,7 +264,7 @@ const closeModal = () => {
                   class="flex size-8 items-center justify-center rounded-full bg-gray-100 text-sm text-gray-500 transition-colors hover:bg-[#04308F] hover:text-white"
                 >
                   <Icon icon="prime:twitter" />
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
@@ -332,7 +332,7 @@ const closeModal = () => {
                 >
                   <Icon icon="ri:linkedin-fill" />
                 </a>
-                <a
+                <!-- <a
                   v-if="member.twitter"
                   :href="member.twitter"
                   target="_blank"
@@ -340,7 +340,7 @@ const closeModal = () => {
                   class="flex size-7 items-center justify-center rounded-full bg-gray-100 text-xs text-gray-500 transition-colors hover:bg-[#026662] hover:text-white"
                 >
                   <Icon icon="prime:twitter" />
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
@@ -415,7 +415,7 @@ const closeModal = () => {
               >
                 <Icon icon="ri:linkedin-fill" class="text-base" /> LinkedIn
               </a>
-              <a
+              <!-- <a
                 v-if="selectedMember.twitter"
                 :href="selectedMember.twitter"
                 target="_blank"
@@ -423,7 +423,7 @@ const closeModal = () => {
                 class="inline-flex items-center gap-2 rounded-full bg-gray-900 px-4 py-2 text-xs font-semibold text-white shadow-xs transition-colors hover:bg-[#05DED5] hover:text-gray-900"
               >
                 <Icon icon="prime:twitter" class="text-base" /> X (Twitter)
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
