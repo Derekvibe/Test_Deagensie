@@ -90,24 +90,16 @@ useHead({
               class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
               >Overview</NuxtLink
             >
-            <NuxtLink
-              to="/business"
-              class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
+            <NuxtLink class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
               >Strategy</NuxtLink
             >
-            <NuxtLink
-              to="/business"
-              class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
+            <NuxtLink class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
               >Branding</NuxtLink
             >
-            <NuxtLink
-              to="/business"
-              class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
+            <NuxtLink class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
               >Marketing</NuxtLink
             >
-            <NuxtLink
-              to="/business"
-              class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
+            <NuxtLink class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
               >Digital Platforms</NuxtLink
             >
           </div>
@@ -119,19 +111,13 @@ useHead({
               class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
               >Find Talent</NuxtLink
             >
-            <NuxtLink
-              to="/creatives"
-              class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
+            <NuxtLink class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
               >Find Opportunities</NuxtLink
             >
-            <NuxtLink
-              to="/creatives"
-              class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
+            <NuxtLink class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
               >AI Matching Engine</NuxtLink
             >
-            <NuxtLink
-              to="/creatives"
-              class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
+            <NuxtLink class="text-gray-300 transition-colors duration-200 hover:text-[#05DED5]"
               >Creative Careers</NuxtLink
             >
           </div>

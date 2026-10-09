@@ -48,7 +48,7 @@ const colorMap: Record<string, string> = {
 </script>
 
 <template>
-  <section class="overflow-hidden border-t border-gray-100 bg-white py-24 text-gray-900 lg:py-32">
+  <section class="overflow-hidden border-t border-gray-100 bg-white py-24 text-gray-900 lg:py-24">
     <!-- Section Editorial Header -->
     <div class="mx-auto mb-14 w-5/6 max-w-7xl text-center lg:mb-20">
       <span

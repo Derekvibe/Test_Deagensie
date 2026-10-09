@@ -30,8 +30,8 @@ const testimonials = [
 </script>
 
 <template>
-  <section class="overflow-hidden bg-white py-24 text-gray-900 lg:py-32">
-    <div class="mx-auto w-5/6 max-w-7xl space-y-16">
+  <section class="overflow-hidden bg-white pt-12 pb-16 text-gray-900 lg:pt-16 lg:pb-20">
+    <div class="mx-auto w-5/6 max-w-7xl space-y-10">
       <!-- Andela Rating Header Badge (Image 1 Header) -->
       <div class="mx-auto max-w-3xl space-y-5 text-center">
         <div

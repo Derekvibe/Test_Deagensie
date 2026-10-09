@@ -180,16 +180,17 @@ const closeModal = () => {
   <div class="bg-white pt-28 pb-24 text-gray-900 lg:pt-36">
     <!-- Header Section -->
     <section class="mx-auto w-5/6 max-w-7xl space-y-12">
-      <div v-reveal="'fade-up'" class="max-w-3xl space-y-6">
-        <span
+      <div v-reveal="'fade-up'" class="mx-auto max-w-4xl space-y-6 text-center">
+        <!-- <span
           class="inline-block rounded-full bg-[#04308F]/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-[#04308F] uppercase"
         >
           Deagensie Knowledge Hub &amp; Blog
-        </span>
+        </span> -->
         <h1
           class="font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-6xl"
         >
-          Where businesses grow &amp; creatives thrive
+          Where businesses grow <br />
+          <span class="text-[#04308F]">&amp; creatives thrive </span>
         </h1>
         <p class="text-base leading-relaxed font-normal text-gray-500 sm:text-lg lg:text-xl">
           Explore our interactive collection of AI growth playbooks, white papers, strategy guides,

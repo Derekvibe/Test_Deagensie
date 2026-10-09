@@ -33,31 +33,39 @@ const latestArticles = [
 </script>
 
 <template>
-  <section class="border-t border-b border-gray-100 bg-gray-50/50 py-20 text-gray-900 lg:py-32">
+  <section class="border-t border-b border-gray-100 bg-gray-50/50 py-20 text-gray-900 lg:py-24">
     <div class="mx-auto w-5/6 max-w-7xl space-y-16">
-      <div
-        v-reveal="'fade-up'"
-        class="flex flex-col justify-between gap-6 md:flex-row md:items-end"
-      >
-        <div class="max-w-2xl space-y-4">
-          <span
-            class="inline-block rounded-full bg-[#04308F]/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-[#04308F] uppercase"
-          >
-            From The Deagensie Desk
-          </span>
-          <h2
-            class="font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
-          >
-            Latest Insights, Playbooks &amp; Editorial Stories
-          </h2>
-        </div>
+      <!-- <div
+    v-reveal="'fade-up'"
+    class="flex flex-col justify-between gap-6 md:flex-row md:items-end"
+  > -->
+
+      <div class="mx-auto max-w-2xl space-y-4">
+        <span
+          class="mx-auto mb-4 block w-fit rounded-full bg-[#04308F]/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-[#04308F] uppercase"
+        >
+          From The Deagensie Desk
+        </span>
+
+        <h2
+          class="text-center font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
+        >
+          Latest Insights, Playbooks &amp; <span class="text-[#04308F]">Editorial Stories</span>
+        </h2>
+      </div>
+
+      <!-- Explore All Articles remains outside the heading container -->
+      <div class="flex justify-end">
         <NuxtLink
           to="/resource"
           class="inline-flex shrink-0 items-center gap-2 rounded-full bg-[#04308F] px-6 py-3 text-sm font-semibold text-white shadow-md shadow-[#04308F]/20 transition-all duration-300 hover:bg-[#05DED5] hover:text-gray-900"
         >
-          Explore All Articles <Icon icon="lucide:arrow-right" class="text-base" />
+          Explore All Articles
+          <Icon icon="lucide:arrow-right" class="text-base" />
         </NuxtLink>
       </div>
+
+      <!-- </div> -->
 
       <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
         <NuxtLink

@@ -15,13 +15,21 @@ const brands = [
 </script>
 
 <template>
-  <section class="space-y-10 py-10 lg:space-y-12 lg:py-18">
+  <section class="space-y-10 py-10 lg:space-y-12 lg:py-10">
     <!-- Heading -->
-    <h2
-      class="mx-auto w-full max-w-3xl text-center font-serif text-2xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl 2xl:text-6xl"
-    >
-      Forward-thinking brands trust Deagensie
-    </h2>
+    <div v-reveal="'fade-up'" class="mx-auto max-w-4xl space-y-4 text-center">
+      <span
+        class="inline-block rounded-full bg-[#04308F]/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-[#04308F] uppercase"
+      >
+        Brands that Trusts Deagensie.
+      </span>
+
+      <h2
+        class="mx-auto w-full max-w-3xl text-center font-serif text-2xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl 2xl:text-6xl"
+      >
+        Forward-thinking brands trust <span class="text-[#04308F]"> Deagensie </span>
+      </h2>
+    </div>
 
     <!-- Continuous Logo Marquee -->
     <div class="relative w-full overflow-hidden">
