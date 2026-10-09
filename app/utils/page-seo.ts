@@ -9,7 +9,7 @@ const siteName = 'Deagensie';
 
 const staticPageSeo: Record<string, PageSeo> = {
   '/': {
-    title: "Deagensie | Venture's Growth Lab & Talent-as-a-Service (TaaS)",
+    title: 'Deagensie | Human layer powering your Venture Growth',
     description:
       'Deagensie helps ventures build strategy, branding, marketing & digital platforms, and connects global creative talent through predictive AI matching.',
   },
