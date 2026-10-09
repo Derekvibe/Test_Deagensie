@@ -232,7 +232,7 @@ import { Icon } from '@iconify/vue';
                     class="flex items-center gap-3.5 rounded-2xl border border-gray-100 bg-gray-50/90 p-3 transition-all duration-300 hover:bg-white hover:shadow-md sm:gap-4 sm:p-3.5"
                   >
                     <NuxtImg
-                      src="/images/gift.jpeg"
+                      src="/images/Gift.jpeg"
                       class="size-14 shrink-0 rounded-2xl border border-gray-200/80 object-cover shadow-xs sm:size-16"
                     />
                     <div class="space-y-0.5">
