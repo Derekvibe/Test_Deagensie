@@ -22,7 +22,7 @@ watch(route, () => {
         <NuxtImg
           src="/images/logo.png"
           alt="Deagensie logo"
-          class="h-13 w-auto object-contain transition-all duration-300 sm:h-26 lg:h-32 xl:h-36"
+          class="h-20 w-auto object-contain transition-all duration-300 sm:h-26 lg:h-32 xl:h-36"
         />
       </NuxtLink>
       <SiteHeaderMobileNav v-if="isMobile" v-model:open="isSheetOpen" />

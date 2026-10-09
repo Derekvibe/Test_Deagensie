@@ -35,13 +35,15 @@ useHead({
         class="mx-auto flex w-5/6 max-w-7xl flex-col gap-12 lg:grid lg:grid-cols-[1.2fr_2fr] lg:gap-16"
       >
         <div class="space-y-6">
-          <NuxtLink to="/" aria-label="Deagensie logo" class="-ml-1 inline-block p-0">
+          <NuxtLink
+            to="/"
+            aria-label="Deagensie logo"
+            class="-my-3 -ml-2.5 inline-block sm:-my-4 sm:-ml-3.5 lg:-my-5 lg:-ml-4.5 xl:-my-6 xl:-ml-5.5"
+          >
             <NuxtImg
-              :width="240"
-              :height="62"
               src="/images/logo.png"
               alt="Deagensie logo"
-              class="h-12 w-auto object-contain object-left lg:h-14"
+              class="h-20 w-auto object-contain transition-all duration-300 sm:h-26 lg:h-32 xl:h-36"
             />
           </NuxtLink>
           <p class="max-w-md text-sm leading-relaxed text-gray-300 sm:text-base">
