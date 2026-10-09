@@ -22,8 +22,8 @@
           <p
             class="mt-4 mb-8 text-sm leading-relaxed text-gray-300 lg:text-base lg:leading-relaxed"
           >
-            Partner with our strategy, branding, marketing, and digital platform architects to build
-            systems that scale.
+            We combine strategy, branding, marketing, and technology to build scalable business
+            growth systems.
           </p>
         </div>
         <div>
@@ -58,8 +58,8 @@
           <p
             class="mt-4 mb-8 text-sm leading-relaxed text-white/90 lg:text-base lg:leading-relaxed"
           >
-            Create your verified profile and get matched by our predictive AI engine with
-            high-impact global opportunities.
+            Build your verified profile and get matched with global opportunities through our
+            predictive AI engine.
           </p>
         </div>
         <div>
