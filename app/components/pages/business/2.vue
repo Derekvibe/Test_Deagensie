@@ -12,7 +12,7 @@
       <h2
         class="font-serif text-2xl leading-tight font-normal tracking-tight text-gray-900 sm:text-3xl lg:text-5xl"
       >
-        Premium Growth Solutions for Visionary Brands
+        Premium Growth Solutions for <br /><span class="text-[#04308F]"> Visionary Brands </span>
       </h2>
       <p class="mx-auto max-w-3xl text-base leading-relaxed font-normal text-gray-500 lg:text-lg">
         Growth isn&apos;t accidental; it&apos;s engineered. We partner with startups ready to scale,

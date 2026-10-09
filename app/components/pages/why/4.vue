@@ -6,9 +6,11 @@ import { Icon } from '@iconify/vue';
   <section>
     <div>
       <div>
-        <h2>
-          Unlocking African Creative Power<span class="hidden lg:inline">&nbsp;<br /></span>
-          Globally.
+        <h2
+          class="text-center font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
+        >
+          Unlocking African Creative <br /><span class="text-[#04308F]">Power Globally.</span
+          ><span class="hidden lg:inline"> </span>
         </h2>
         <p>
           Africa is home to some of the world&apos;s most dynamic creative minds. Yet too many

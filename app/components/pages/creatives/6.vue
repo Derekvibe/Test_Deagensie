@@ -10,7 +10,8 @@
         <h2
           class="font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
         >
-          What Makes Deagensie Revolutionary?
+          What Makes <br />
+          <span class="text-[#04308F]">Deagensie Revolutionary?</span>
         </h2>
         <p class="text-base leading-relaxed font-normal text-gray-500">
           We don&apos;t just place creatives. We build long-term careers, ownership, and sustainable

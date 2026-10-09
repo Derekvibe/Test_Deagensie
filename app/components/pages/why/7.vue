@@ -2,10 +2,10 @@
   <section class="bg-[#F6F6F6] py-12 lg:py-24">
     <div class="mx-auto w-5/6 max-w-7xl">
       <h2
-        class="font-prata text-center text-2xl leading-normal font-normal lg:text-4xl xl:text-5xl xl:leading-normal"
+        class="text-center font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
       >
-        The Deagensie Difference: We combine <br />
-        what others separate.
+        The Deagensie Difference: <br />
+        <span class="text-[#04308F]">We combine what others separate.</span>
       </h2>
       <p class="font-open-sans mt-4 text-center text-[#373737]">
         Most agencies focus on aesthetics. Most accelerators focus on funding. Most talent platforms

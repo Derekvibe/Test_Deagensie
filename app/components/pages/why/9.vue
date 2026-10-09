@@ -2,9 +2,10 @@
   <section class="py-12 lg:py-24">
     <div class="mx-auto w-5/6 max-w-7xl space-y-10">
       <h2
-        class="font-prata text-center text-2xl leading-normal font-normal lg:text-4xl xl:text-5xl xl:leading-normal"
+        class="text-center font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
       >
-        Build Smarter. Scale Faster.<span class="hidden lg:inline">&nbsp;<br /></span>Stay Rooted.
+        Build Smarter. Scale Faster.<span class="hidden lg:inline">&nbsp;<br /></span
+        ><span class="text-[#04308F]">Stay Rooted.</span>
       </h2>
       <div class="space-y-12 lg:grid lg:grid-cols-2 lg:items-center lg:gap-12 lg:space-y-0">
         <NuxtImg

@@ -3,14 +3,14 @@ import { Icon } from '@iconify/vue';
 </script>
 
 <template>
-  <section class="border-b border-gray-100 bg-gray-50/50 py-20 text-gray-900 lg:py-32">
+  <section class="border-b border-gray-100 bg-gray-50/50 py-20 text-gray-900 lg:py-26">
     <div class="mx-auto w-5/6 max-w-7xl space-y-16">
       <div v-reveal="'fade-up'" class="mx-auto max-w-3xl space-y-4 text-center">
         <h2
           class="font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
         >
-          We don&apos;t just support businesses, <br class="hidden lg:inline" />we architect
-          scalable growth
+          We don&apos;t just support businesses, <br class="hidden lg:inline" />
+          <span class="text-[#04308F]"> we architect scalable growth</span>
         </h2>
         <p class="text-base leading-relaxed font-normal text-gray-500 lg:text-lg">
           In a world where brands compete for attention every second, growth belongs to the bold.

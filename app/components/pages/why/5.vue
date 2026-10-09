@@ -6,10 +6,10 @@ import { Icon } from '@iconify/vue';
   <section class="py-12 lg:py-24">
     <div class="mx-auto w-5/6 max-w-7xl">
       <h2
-        class="font-prata text-center text-2xl leading-normal font-normal lg:text-4xl xl:text-5xl xl:leading-normal"
+        class="text-center font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
       >
-        The Founders' Growth Lab <span class="hidden lg:inline">&nbsp;<br /></span>Where Startups
-        Become Scalable Brands.
+        The Founders' Growth Lab <span class="hidden lg:inline">&nbsp;<br /></span>
+        <span class="text-[#04308F]">Where Startups Become Scalable Brands. </span>
       </h2>
       <p class="font-open-sans mt-4 mb-15 text-center">
         Startups don't fail because of bad ideas. They fail because of weak positioning, poor

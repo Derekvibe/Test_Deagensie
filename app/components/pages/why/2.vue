@@ -6,7 +6,7 @@ import { Icon } from '@iconify/vue';
   <section class="bg-[#FCFCFE] py-15 lg:py-24">
     <div class="mx-auto w-5/6 max-w-7xl space-y-10 lg:space-y-12">
       <h2
-        class="font-prata text-center text-2xl leading-normal font-normal lg:text-5xl lg:leading-normal"
+        class="text-center font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
       >
         Our AI Capabilities Include
       </h2>

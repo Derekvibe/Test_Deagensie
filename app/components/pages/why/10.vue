@@ -6,7 +6,9 @@
       class="mx-auto w-5/6 text-center lg:w-auto lg:rounded-[calc(var(--radius)+2px)] lg:bg-[#04308F] lg:py-20"
     >
       <div class="lg:mx-auto lg:w-5/6">
-        <h2 class="font-prata text-2xl leading-normal font-normal lg:text-5xl lg:leading-normal">
+        <h2
+          class="text-center font-serif text-3xl leading-tight font-normal tracking-tight text-white sm:text-4xl lg:text-5xl"
+        >
           Ready to Evolve Your Brand?
         </h2>
         <p class="font-open-sans mt-4 mb-6 font-normal lg:my-6 lg:text-xl">

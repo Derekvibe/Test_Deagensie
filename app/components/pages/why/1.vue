@@ -7,10 +7,10 @@ import { Icon } from '@iconify/vue';
     <div class="mx-auto w-5/6 max-w-7xl space-y-16">
       <div v-reveal="'fade-up'" class="mx-auto max-w-3xl space-y-4 text-center">
         <h2
-          class="font-prata text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
+          class="font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
         >
-          Most agencies create visuals and run campaigns. <br class="hidden lg:inline" />Deagensie
-          goes deeper.
+          Most agencies run campaigns. <br class="hidden lg:inline" />
+          <span class="text-[#04308F]">Deagensie builds growth.</span>
         </h2>
         <p class="font-open-sans text-base leading-relaxed font-normal text-gray-500 lg:text-lg">
           We fuse AI-driven intelligence, African creative excellence, and founder-focused growth

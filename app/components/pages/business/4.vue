@@ -16,7 +16,7 @@ import { Icon } from '@iconify/vue';
         <h2
           class="font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
         >
-          Build a forward-thinking team that drives magic
+          Build a forward-thinking team that <span class="text-[#04308F]"> drives magic </span>
         </h2>
         <p class="text-base leading-relaxed font-normal text-gray-500">
           Your people are your greatest asset. We equip your creative teams with the mindset, tools,

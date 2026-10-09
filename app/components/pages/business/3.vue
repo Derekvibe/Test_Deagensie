@@ -42,30 +42,34 @@ const capabilities = [
 </script>
 
 <template>
-  <section class="border-b border-gray-100 bg-white py-20 text-gray-900 lg:py-32">
+  <section class="border-b border-gray-100 bg-white py-20 text-gray-900 lg:py-26">
     <div class="mx-auto w-5/6 max-w-7xl space-y-16">
-      <div
-        v-reveal="'fade-up'"
-        class="flex flex-col justify-between gap-6 md:flex-row md:items-end"
-      >
-        <div class="max-w-2xl space-y-4">
+      <div v-reveal="'fade-up'" class="flex flex-col gap-6">
+        <div class="mx-auto max-w-2xl space-y-4">
           <span
-            class="inline-block rounded-full bg-[#04308F]/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-[#04308F] uppercase"
+            class="mx-auto mb-4 block w-fit rounded-full bg-[#04308F]/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-[#04308F] uppercase"
           >
             Our Capabilities
           </span>
+
           <h2
-            class="font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
+            class="text-center font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
           >
-            How Our Experts Elevate Your Business
+            How Our Experts Elevate <br />
+            <span class="text-[#04308F]"> Your Business </span>
           </h2>
         </div>
-        <NuxtLink
-          to="/contact"
-          class="inline-flex items-center gap-2 rounded-full bg-[#04308F] px-6 py-3 text-sm font-semibold text-white shadow-md shadow-[#04308F]/20 transition-all duration-300 hover:bg-[#05DED5] hover:text-gray-900"
-        >
-          Explore Solutions <Icon icon="lucide:arrow-right" class="text-base" />
-        </NuxtLink>
+
+        <!-- Explore Solutions stays outside the heading container -->
+        <div class="flex justify-end">
+          <NuxtLink
+            to="/contact"
+            class="inline-flex items-center gap-2 rounded-full bg-[#04308F] px-6 py-3 text-sm font-semibold text-white shadow-md shadow-[#04308F]/20 transition-all duration-300 hover:bg-[#05DED5] hover:text-gray-900"
+          >
+            Explore Solutions
+            <Icon icon="lucide:arrow-right" class="text-base" />
+          </NuxtLink>
+        </div>
       </div>
 
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">

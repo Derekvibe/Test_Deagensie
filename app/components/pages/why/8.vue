@@ -6,10 +6,12 @@ import { Icon } from '@iconify/vue';
   <section class="py-12 lg:py-24">
     <div class="mx-auto w-5/6 max-w-7xl">
       <h2
-        class="font-prata text-center text-2xl leading-normal font-normal lg:text-4xl xl:text-5xl xl:leading-normal"
+        class="text-center font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
       >
-        If you're building something bold <span class="hidden lg:inline">&nbsp;<br /></span>we are
-        your unfair advantage.
+        If you're building something bold
+        <span class="text-[#04308F]">
+          <span class="hidden lg:inline">&nbsp;<br /></span>we are your unfair advantage.
+        </span>
       </h2>
       <ul
         class="**:[h3]:font-prata **:[p]:font-open-sans mt-15 space-y-6 *:rounded-[calc(var(--radius)+2px)] *:border *:border-[#8CA0CB] *:bg-[#FCFCFE] *:px-4 *:py-6 lg:grid lg:grid-cols-3 lg:gap-6 lg:space-y-0 **:[div]:grid **:[div]:size-10 **:[div]:place-items-center **:[div]:rounded-full **:[div]:bg-[#E6EAF4] **:[div]:text-2xl **:[div]:text-[#04308F] **:[h3]:mt-4 **:[h3]:mb-3 **:[h3]:text-2xl **:[h3]:leading-normal **:[h3]:font-normal lg:**:[h3]:min-h-[2lh] xl:**:[h3]:min-h-0 **:[p]:py-3"

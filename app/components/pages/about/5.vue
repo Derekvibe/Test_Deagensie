@@ -104,7 +104,7 @@ const closeModal = () => {
 <template>
   <section
     id="about_team"
-    class="overflow-hidden border-b border-gray-100 bg-white py-20 text-gray-900 lg:py-32"
+    class="overflow-hidden border-b border-gray-100 bg-white py-20 text-gray-900 lg:py-26"
   >
     <div class="mx-auto w-5/6 max-w-7xl space-y-20 lg:space-y-28">
       <!-- Section Header -->
@@ -376,7 +376,7 @@ const closeModal = () => {
               <NuxtImg
                 :src="selectedMember.image"
                 :alt="selectedMember.name"
-                class="size-full object-cover object-top"
+                class="size-full object-cover object-center"
               />
             </div>
             <div class="space-y-1">
