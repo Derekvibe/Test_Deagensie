@@ -117,7 +117,7 @@ const closeModal = () => {
         <h2
           class="font-serif text-3xl leading-tight font-normal tracking-tight text-gray-900 sm:text-4xl lg:text-5xl"
         >
-          People who build the future
+          People who build <span class="text-[#04308F]"> the future </span>
         </h2>
         <p class="mx-auto max-w-2xl text-base leading-relaxed font-normal text-gray-500">
           A collective of strategists, designers, developers, and connectors united by one mission:
